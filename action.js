@@ -27,6 +27,29 @@ new Vue({
           description:'Shed those extra pounds',
         }
       ],
+      products:[
+        {
+          icon:'fas fa-users',
+          offer:'Team training',
+          subtitle:'Find a partner',
+          description:'Vestibulum, curabitur eu sem nibh ultricess sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique',
+          link:'Find a partner'
+        },
+        {
+          icon: 'fas fa-dumbbell',
+          offer:'Crossfit workout',
+          subtitle:'Push your limits',
+          description:'Vestibulum, curabitur eu sem nibh ultricess sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique',
+          link:'Learn about Crossfit'
+        },
+        {
+          icon:'fas fa-running',
+          offer:'Weight loss plan',
+          subtitle:'Shen those pounds',
+          description:'Vestibulum, curabitur eu sem nibh ultricess sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique',
+          link:'Schedule a workout'
+        }
+      ],
   },
   methods:{
 

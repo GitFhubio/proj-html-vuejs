@@ -141,7 +141,17 @@
           </div>
         </div>
       </div>
-
+      <div class="products">
+        <div class="container">
+          <div class="product" v-for="product in products">
+            <i :class="product.icon"></i>
+            <h4>{{product.offer}}</h4>
+            <h5>{{product.subtitle}}</h5>
+            <p>{{product.description}}</p>
+            <p>{{product.link}} <i class="fas fa-angle-right"></i></p>
+          </div>
+        </div>
+      </div>
     </div>
 
 
