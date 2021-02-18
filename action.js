@@ -95,6 +95,13 @@ new Vue({
           link:'Visit Power Gym'
         }
       ],
+        socialIcons:[
+            { name: 'fab fa-facebook-f' },
+            { name: 'fab fa-twitter', },
+            { name: 'fab fa-youtube', },
+            { name: 'fab fa-instagram', },
+            { name: 'fab fa-linkedin-in' }
+          ],
   },
   methods:{
 
