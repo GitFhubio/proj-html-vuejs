@@ -123,10 +123,10 @@ new Vue({
           ],
   },
   methods:{
-      animationIn(){
+      animationIn1(){
       this.fade1="fadeIn";
       },
-      animationOut(){
+      animationOut1(){
       this.fade1="fadeOut"
     },
     animationIn2(){
@@ -135,6 +135,8 @@ new Vue({
     animationOut2(){
     this.fade2="fadeOut"
   },
+
+
       refreshPage(){
       location.reload();
     }
