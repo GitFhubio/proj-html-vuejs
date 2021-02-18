@@ -1,6 +1,8 @@
 new Vue({
   el: '#root',
   data: {
+    fade1:'',
+    fade2:'',
     loading:false,
       srclogo:'img/logo.png',
       headerData:[
@@ -121,7 +123,18 @@ new Vue({
           ],
   },
   methods:{
-
+      animationIn(){
+      this.fade1="fadeIn";
+      },
+      animationOut(){
+      this.fade1="fadeOut"
+    },
+    animationIn2(){
+    this.fade2="fadeIn";
+    },
+    animationOut2(){
+    this.fade2="fadeOut"
+  },
       refreshPage(){
       location.reload();
     }

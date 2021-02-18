@@ -779,6 +779,66 @@ footer{
     }
   }
 }
+.popup{
+  position:fixed;
+  top:200px;
+  right:15px;
+  div{
+    @include flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width:65px;
+    margin-bottom: 10px;
+    height:65px;
+    background-color: #fff;
+    border-radius:5px;
+    p{padding-top: 4px;
+      font-size: 13px;
+
+    }
+  }
+}
 
 // chiusura wrapper
 }
+
+.fadeIn {
+  position:relative;
+  animation: fade_in .15s;
+
+}
+.fadeOut {
+  position:relative;
+  animation: fade_out .15s;
+
+}
+
+@keyframes fade_in {
+  0% {
+    left:0;}
+    50%{
+      left:50px;
+    }
+    51%{
+      left:-50px;
+    }
+    100%{
+      left:0;
+    }
+  }
+
+  @keyframes fade_out {
+    0% {
+      left:0;}
+      50%{
+        left:-50px;
+      }
+
+    51%{
+      left:50px;
+    }
+      100%{
+        left:0;
+      }
+    }
