@@ -92,3 +92,44 @@ width: 100px;
 border-radius: 50%;
 background-color: $primary_textcolor;
 }
+
+@mixin fade-out{
+@keyframes fade-out {
+    0% {
+        right: 0;
+        top: 0;
+    }
+    50% {
+        right: 50px;
+        top: 0;
+    }
+    51% {
+        right: -50px;
+        top: 0;
+    }
+    100% {
+        right: 0;
+        top: 0;
+    }
+}
+}
+@mixin fade-in{
+@keyframes fade-in {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    50% {
+        left: 50px;
+        top: 0;
+    }
+    51% {
+        left: -50px;
+        top: 0;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+}
