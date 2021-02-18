@@ -22,7 +22,7 @@ body {
   z-index: 3;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #000000;
 }
 .charger i {
   position: absolute;
@@ -94,7 +94,7 @@ body {
   font-weight: 500;
 }
 .wrapper .header-right ul li a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper .header-right ul li span {
   padding: 5px 7px;
@@ -107,7 +107,7 @@ body {
 .wrapper .blue-button {
   padding: 15px 30px;
   border-radius: 40px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   background-color: #4154FF;
   font-weight: 500;
@@ -137,7 +137,7 @@ body {
 .wrapper .jumbotron-left h1 {
   font-size: 75px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper .jumbotron-left img {
   width: 85px;
@@ -162,14 +162,14 @@ body {
 .wrapper .jumbotron-left ul .trasparent-button {
   padding: 15px 30px;
   border-radius: 40px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   border: 2px solid #bcbcbc;
   font-weight: 500;
 }
 .wrapper .jumbotron-left ul .trasparent-button:hover {
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
+  background-color: #fff;
+  border: 2px solid #fff;
   color: #000000;
 }
 .wrapper .jumbotron-left ul i {
@@ -186,7 +186,7 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,7 +239,7 @@ body {
   padding-top: 60px;
   font-size: 48px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   line-height: 1.4;
 }
@@ -254,7 +254,7 @@ body {
 .wrapper .main-top-description ul li {
   padding: 0 10px;
   font-size: 22px;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper .main-top-description ul li:first-child img {
   width: 70px;
@@ -266,7 +266,7 @@ body {
 }
 .wrapper .main-center {
   height: 700px;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
 }
 .wrapper .main-center-left {
@@ -288,7 +288,7 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -333,7 +333,7 @@ body {
 }
 .wrapper .main-center-right .youtube .left {
   background-color: #CF000F;
-  color: #ffffff;
+  color: #fff;
   padding: 2px;
 }
 .wrapper .main-center-right p {
@@ -343,7 +343,7 @@ body {
 .wrapper .main-center-right .red-button {
   padding: 15px 30px;
   border-radius: 40px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   background-color: #CF000F;
   font-weight: 500;
@@ -401,7 +401,7 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -459,7 +459,7 @@ body {
 .wrapper .jumbotron-content h2 {
   font-size: 58px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper .jumbotron-content img {
   width: 85px;
@@ -503,7 +503,7 @@ body {
   border: 4px solid #4154FF;
   border-radius: 8px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   font-weight: 500;
   padding: 0 45px;
 }
@@ -530,7 +530,7 @@ body {
 }
 .wrapper .products .product p:last-child {
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper .products .product p:last-child i {
   padding: 0;
@@ -587,7 +587,7 @@ body {
   padding: 0 10px;
 }
 .wrapper .latest-articles .container .articles .article ul li {
-  color: #000;
+  color: #000000;
   font-size: 18px;
 }
 .wrapper .latest-articles .container .articles .article ul li span {
@@ -609,7 +609,7 @@ body {
 .wrapper .third-jumbotron h1 {
   font-size: 60px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper .third-jumbotron img {
   width: 85px;
@@ -617,7 +617,7 @@ body {
 .wrapper .third-jumbotron p {
   font-size: 23px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper .third-jumbotron a {
   display: block;
@@ -679,7 +679,7 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -694,7 +694,7 @@ body {
   padding: 20px 0;
 }
 .wrapper .final-jumbotron h1, .wrapper .final-jumbotron a {
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper .final-jumbotron h2 {
   color: #FFF941;
@@ -724,7 +724,7 @@ body {
   padding-top: 40px;
   font-size: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper footer .container .footer-top .brand-section ul {
   display: flex;
@@ -738,7 +738,7 @@ body {
 }
 .wrapper footer .container .footer-top .recent-posts {
   width: 370px;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper footer .container .footer-top .recent-posts h6 {
   font-size: 24px;
@@ -757,7 +757,7 @@ body {
 }
 .wrapper footer .container .footer-top .contact-informations {
   width: 370px;
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper footer .container .footer-top .contact-informations h6 {
   font-size: 24px;
@@ -788,7 +788,7 @@ body {
   color: #bcbcbc;
 }
 .wrapper footer .footer-bottom ul span {
-  color: #ffffff;
+  color: #fff;
 }
 .wrapper footer .footer-bottom ul span:hover {
   color: #ec5a57;

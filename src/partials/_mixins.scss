@@ -55,12 +55,12 @@ transform: translate(-50% , -50%);
 @mixin Btn {
   padding:15px 30px;
   border-radius: 40px;
-  color: $colorWhite;
+  color: $primary_textcolor;
   cursor: pointer;
 }
 @mixin blueBtn {
   @include Btn;
-  background-color: $colorViolet;
+  background-color: $colorBlue;
   font-weight: 500;
   &:hover {
     background-color: $colorOrange;
@@ -71,16 +71,10 @@ transform: translate(-50% , -50%);
   border: 2px solid $colorSilver;
   font-weight: 500;
   &:hover {
-    background-color: $colorWhite;
-    border: 2px solid $colorWhite;
-    color: $colorBlack;
+    background-color: $primary_textcolor;
+    border: 2px solid $primary_textcolor;
+    color: $primary_bgcolor;
   }
-}
-@mixin playCircle {
-height: 100px;
-width: 100px;
-border-radius: 50%;
-background-color: $colorWhite;
 }
 
 @mixin redBtn {
@@ -90,4 +84,11 @@ background-color: $colorWhite;
   &:hover {
     background-color: rgba(207, 0, 15, 0.5)
   }
+}
+
+@mixin playCircle {
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background-color: $primary_textcolor;
 }
