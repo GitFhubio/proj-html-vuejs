@@ -222,8 +222,7 @@ body {
   transition: 0.4s;
 }
 .wrapper .main-top .container .boxImg:hover {
-  height: 410px;
-  width: 370px;
+  transform: scale(1.1) translateY(-15%);
 }
 .wrapper .main-top .container .boxImg img {
   width: 50px;

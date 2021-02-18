@@ -185,8 +185,7 @@ body {
       transform: translateY(-15%);
       transition: 0.4s;
       &:hover {
-        height: 410px;
-        width: 370px;
+       transform: scale(1.1) translateY(-15%);;
       }
       img {
             width: 50px;
