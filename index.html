@@ -159,7 +159,12 @@
           </div>
           <div class="articles">
             <div class="article" v-for="article in articles">
-              <img :src="article.photo" alt="foto articolo">
+              <div class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
+                <div class="layover">
+
+                </div>
+              <!-- <img :src="article.photo" alt="foto articolo"> -->
+               </div>
               <h5>{{article.title}}</h5>
               <ul>
                 <li>By <span>{{article.author}} | </span></li>
