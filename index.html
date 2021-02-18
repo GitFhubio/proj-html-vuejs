@@ -179,7 +179,16 @@
           </p>
               <a class="blue-button" href="#">Buy Avada Today <i class="fas fa-angle-right"></i></a>
           </div>
-
+          <div class="offers">
+            <div class="container">
+              <div class="offer" v-for="offer in offers">
+                <img :src="offer.logo" alt="logo offerta">
+                <img src="img/wave.svg" alt="wave">
+                <p>{{offer.description}}</p>
+                <p>{{offer.link}} <i class="fas fa-angle-right"></i></p>
+              </div>
+            </div>
+          </div>
   <!-- chiusura wrapper -->
     </div>
 <!-- chiusura root -->

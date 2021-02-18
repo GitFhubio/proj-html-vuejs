@@ -73,6 +73,28 @@ new Vue({
           category:'Gym',
         }
       ],
+      offers:[
+        {
+          logo:'img/sponsor-1-2x-200x103.png',
+          description:'Tristique aliquam in nullam habitasse nunc, amet vel consectetur. Nulla in suspendisse dolor, aliquet.',
+          link:'Visit Yoga Studio'
+        },
+        {
+          logo:'img/sponsor-2-2x-200x103.png',
+          description:'Feugiat etiam dui mauris pharetra mauris sed pharetra. Convallis sapien ornare cras faucibus nulla porta dui a.',
+          link:'Join Fitness Center '
+        },
+        {
+          logo:'img/sponsor-3-2x-200x103.png',
+          description:'Nisl at quam adipiscing montes, nec, adipiscing commodo aliquam tincidunt. Ligula in habitant et sagittis imperdiet.',
+          link:'Learn about FC'
+        },
+        {
+          logo:'img/sponsor-4-2x.png',
+          description:'Proin in viverra maecenas et mattis ut nibh enim. Gravida ultricies mi porta lacus. Et posuere velit sed nec eleifend.',
+          link:'Visit Power Gym'
+        }
+      ],
   },
   methods:{
 
