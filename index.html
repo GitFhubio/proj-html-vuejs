@@ -109,7 +109,21 @@
         <!-- fine main-center -->
         <!-- inizio main-bottom -->
         <div class="main-bottom">
-
+          <div class="container">
+            <div>
+              <p>Featured playlists</p>
+              <p>View all videos <i class="fas fa-angle-right"></i></p>
+            </div>
+            <div class="videos">
+              <div class="video" v-for="video in videosData">
+                <div class="photo"><div class="play"><i class="fas fa-play"></i></div>
+                <img :src="video.photo" alt="thumbnail video">
+              </div>
+                <h5>{{video.title}}</h5>
+                <p>{{video.description}}</p>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- fine main-bottom -->
       </div>

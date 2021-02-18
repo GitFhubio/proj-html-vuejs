@@ -304,6 +304,79 @@ body {
     }
 }
 // chiude main center
+.main-bottom {
+  height: 600px;
+  .container {
+    @include widthContainer;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    div {
+      @include flex;
+      justify-content: space-between;
+      font-size: 27px;
+      font-weight: 500;
+      p:last-child {
+        padding-right: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        i {
+          vertical-align: middle;
+        }
+        &:hover {
+          color: $colorViolet;
+        }
+      }
+    }
+    .videos{
+      @include flex;
+      flex-direction: row;
+      justify-content: space-between;
+      cursor: pointer;
+      .video {
+        @include flex;
+        flex-direction: column;
+        width: 380px;
+        .photo {
+          position:relative;
+          .play{
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          background-color: $colorWhite;
+          @include centered;
+          @include flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            font-size:$font_size /2;
+            color:$colorViolet;
+          }
+          &:hover i {
+            color: $colorOrange;
+          }
+        }
+        img {
+          height: 230px;
+          width: 360px;
+          margin-top: 25px;
+          border-radius: 4px 4px 40px 4px;
+        }
+      }
+        h5 {
+          font-size: 28px;
+          font-weight: 500;
+          padding: 25px 0 10px;
+          text-align: center;
+        }
+        p {
+          font-size: 20px;
+          text-align: center;
+          color: $colorViolet;
+        }
+      }
+    }
+  }
+}
 
 
 }
