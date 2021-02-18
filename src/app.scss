@@ -1,0 +1,166 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:$font_family;
+  font-size: $font_size;
+}
+.charger{
+  position:absolute;
+  z-index:3;
+  width:$full_width;
+  height:$full_height;
+  background-color: $primary_color;
+
+  i {
+  position:absolute;
+  color:$primary_textcolor;
+  font-size: $font_size * 8;
+  z-index:4;
+
+@include centered;
+@include rotate;
+}
+}
+
+.wrapper{
+  width:$full_width;
+  height:$full_height;
+  max-width:100vw;
+
+// inizio header
+  header {
+    height: 100px;
+    width: 100%;
+    padding:10px;
+    background-color: $colorCodGrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-left {
+    img {
+      margin-left: 20px;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    ul:first-child {
+      padding-top: 11px;
+    }
+    ul {
+      @include listInline;
+      li {
+        margin: 20px;
+        a {
+          text-decoration: none;
+          color: $colorSilver;
+          font-weight: 500;
+          &:hover{
+            color: $colorWhite;
+          }
+        }
+        span {
+          padding: 5px 7px;
+          margin-left: 10px;
+          font-size: 12px;
+          font-weight: 500;
+          color: $colorCodGrey;
+          background-color: $colorYellow;
+        }
+      }
+    }
+  }
+  .blue-button {
+    @include blueBtn;
+    font-size: 14px;
+  }
+// inizio jumbotron
+.jumbotron {
+  height: 570px;
+  width: 100%;
+  background-color: $colorCodGrey;
+  background-image: linear-gradient(90deg, #060606 45%,rgba(6,6,6,0) 75%),  url("../img/slider82x-scaled.jpg");
+  background-position: top right ;
+  background-size: cover;
+  .container{
+    @include widthContainer;
+    display: flex;
+    flex-direction: row;
+  }
+
+&-left {
+  h3 {
+    padding-top:100px;
+    font-size: 27px;
+    font-weight: 500;
+    color: $colorOrange;
+  }
+  h1 {
+    font-size: 75px;
+    font-weight: 500;
+    color: $colorWhite;
+  }
+  img {
+    width: 85px;
+  }
+  p {
+    font-size: 25px;
+    font-weight: 400;
+    color: $colorSilver;
+  }
+  ul {
+    @include listInline;
+    margin-top: 30px;
+    li {
+      font-size: 18px;
+      &:nth-child(2) {
+        margin-left: 10px;
+      }
+    }
+    .trasparent-button {
+      @include trasparentBtn;
+    }
+    i {
+      vertical-align: middle;
+    }
+  }
+}
+&-right {
+  width: 30%;
+  padding-top:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-play {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: $colorWhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      color:$colorViolet;
+    }
+    &:hover i {
+      color: $colorOrange;
+    }
+  }
+}
+}
+
+}
