@@ -62,11 +62,10 @@
         <!-- inizio main top -->
         <div class="main-top">
           <div class="container">
-            <div class="boxImg1">
-            </div>
-            <div class="boxImg2">
-            </div>
-            <div class="boxImg3">
+            <div v-for="service in services" :style="{ 'background-image' : 'url(\'' + service.photo + '\')' }" class="boxImg">
+                <img src="img/wave.svg" alt="wave">
+                <h5>{{service.title}}</h5>
+                <span>{{service.description}}</span>
             </div>
           </div>
           <div class="main-top-description">

@@ -10,6 +10,23 @@ new Vue({
         { navElement: 'Videos' },
         { navElement: 'Blog' }
       ],
+      services:[
+          {
+            photo: 'img/box1.jpg',
+            title: 'Crossfit workout',
+            description:'Push your limits',
+          },
+          {
+            photo: 'img/box2.jpg',
+            title: 'New gym apparel',
+            description:'Look good, feel good',
+          },
+          {
+            photo: 'img/box3.jpg',
+            title: 'Team training',
+            description:'Find a partner',
+          }
+        ],
       videosData:[
         {
           photo: 'img/video2-2x.jpg',
