@@ -43,8 +43,7 @@ body {
     width: 100%;
     padding:10px;
     background-color: $colorCodGrey;
-    display: flex;
-    flex-direction: row;
+  @include flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -56,8 +55,7 @@ body {
   }
 
   .header-right {
-    display: flex;
-    flex-direction: row;
+ @include flex;
     ul:first-child {
       padding-top: 11px;
     }
@@ -98,8 +96,7 @@ body {
   background-size: cover;
   .container{
     @include widthContainer;
-    display: flex;
-    flex-direction: row;
+    @include flex;
   }
 
 &-left {
@@ -159,6 +156,18 @@ body {
     &:hover i {
       color: $colorOrange;
     }
+  }
+}
+}
+
+.main{
+  &-top{
+    height: 900px;
+    width: $full_width;
+    background-image: linear-gradient(150deg, #0219eb 0%, #d5000b 100%);
+  .container{
+    @include widthContainer;
+    @include flex;
   }
 }
 }
