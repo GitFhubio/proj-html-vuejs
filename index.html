@@ -152,6 +152,25 @@
           </div>
         </div>
       </div>
+      <div class="latest-articles">
+        <div class="container">
+          <div>
+            <p>Latest articles</p>
+            <p>Read all articles <i class="fas fa-angle-right"></i></p>
+          </div>
+          <div class="articles">
+            <div class="article" v-for="article in articles">
+              <img :src="article.photo" alt="foto articolo">
+              <h5>{{article.title}}</h5>
+              <ul>
+                <li>By <span>{{article.author}} | </span></li>
+                <li> {{article.date}} </li>
+                <li><span> | {{article.category}}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 

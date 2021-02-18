@@ -50,6 +50,29 @@ new Vue({
           link:'Schedule a workout'
         }
       ],
+      articles:[
+        {
+          photo: 'img/blog4-2x.jpg',
+          title: 'The best protein shake',
+          author: 'Admin',
+          date: 'November 26th, 2019',
+          category:'Gym',
+        },
+        {
+          photo: 'img/blog1-2x.jpg',
+          title: 'Ultimate cardio workout',
+          author: 'Admin',
+          date: 'November 26th, 2019',
+          category:'Gym',
+        },
+        {
+          photo: 'img/blog3-2x.jpg',
+          title: 'New juices available now',
+          author: 'Admin',
+          date: 'November 26th, 2019',
+          category:'Gym',
+        }
+      ],
   },
   methods:{
 
