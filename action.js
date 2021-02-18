@@ -135,9 +135,7 @@ new Vue({
     animationOut2(){
     this.fade2="fadeOut"
   },
-
-
-      refreshPage(){
+    refreshPage(){
       location.reload();
     }
   },
