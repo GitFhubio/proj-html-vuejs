@@ -658,3 +658,38 @@ body {
 .wrapper .offers .container div a i {
   vertical-align: middle;
 }
+.wrapper .final-jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 530px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(151deg, rgba(6, 25, 231, 0.4) 35%, rgba(206, 1, 18, 0.4) 100%), url("../img/banner14-2x.jpg");
+}
+.wrapper .final-jumbotron .play {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .final-jumbotron .play i {
+  color: #4154FF;
+}
+.wrapper .final-jumbotron .play:hover i {
+  color: #ec5a57;
+}
+.wrapper .final-jumbotron h1 {
+  padding: 20px 0;
+}
+.wrapper .final-jumbotron h1, .wrapper .final-jumbotron a {
+  color: #ffffff;
+}
+.wrapper .final-jumbotron h2 {
+  color: #FFF941;
+}

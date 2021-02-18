@@ -616,7 +616,38 @@ body {
 
 }
 }
-
+.final-jumbotron{
+  @include flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  height:530px;
+  background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+background-image: linear-gradient(151deg,rgba(6, 25, 231, 0.4) 35%, rgba(206,1, 18, 0.4) 100%), url('../img/banner14-2x.jpg');
+.play{
+  @include playCircle;
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    color:$colorViolet;
+  }
+  &:hover i {
+    color: $colorOrange;
+  }
+}
+h1{
+  padding:20px 0;
+}
+h1,a{
+  color:$colorWhite;
+}
+h2{
+  color:$colorYellow;
+}
+}
 
 // chiusura wrapper
 }
