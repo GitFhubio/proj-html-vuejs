@@ -9,6 +9,9 @@
   padding:0;
   box-sizing: border-box;
 }
+a{
+  text-decoration:none;
+}
 
 body {
   font-family:$font_family;
@@ -541,5 +544,41 @@ body {
     }
   }
 }
+
+.third-jumbotron {
+  height: 730px;
+  padding: 0 300px;
+  background-image: linear-gradient(180deg, rgba(0,2,17,0.16) 0%,$colorBlack 100%),url("../img/banner2-2x.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: $colorWhite;
+  }
+  img {
+    width: 85px;
+  }
+  p {
+    font-size: 23px;
+    font-weight: 400;
+    color: $colorWhite;
+  }
+  a {
+    display:block;
+    width: 230px;
+    margin-top: 40px;
+    font-size: 18px;
+  }
+}
+
+
+
 // chiusura wrapper
 }
