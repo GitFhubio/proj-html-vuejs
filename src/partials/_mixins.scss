@@ -76,3 +76,18 @@ transform: translate(-50% , -50%);
     color: $colorBlack;
   }
 }
+@mixin playCircle {
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background-color: $colorWhite;
+}
+
+@mixin redBtn {
+  @include Btn;
+  background-color: $colorRed;
+  font-weight: 500;
+  &:hover {
+    background-color: rgba(207, 0, 15, 0.5)
+  }
+}
