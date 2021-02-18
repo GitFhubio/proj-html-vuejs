@@ -515,6 +515,12 @@ body {
   color: #fff;
   font-weight: 500;
   padding: 0 45px;
+  transition: 0.4s;
+}
+.wrapper .products .product:hover {
+  padding: 0 55px;
+  height: 560px;
+  width: 380px;
 }
 .wrapper .products .product i {
   font-size: 50px;

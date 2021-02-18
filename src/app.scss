@@ -185,7 +185,7 @@ body {
       transform: translateY(-15%);
       transition: 0.4s;
       &:hover {
-       transform: scale(1.1) translateY(-15%);;
+       transform: scale(1.1) translateY(-15%);
       }
       img {
             width: 50px;
@@ -467,6 +467,12 @@ body {
     color: $primary_textcolor;
     font-weight: 500;
     padding: 0 45px;
+    transition: 0.4s;
+    &:hover {
+      padding: 0 55px;
+      height: 560px;
+      width: 380px;
+    }
     i{
       font-size: 50px;
       padding-top: 75px;
