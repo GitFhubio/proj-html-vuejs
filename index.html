@@ -7,7 +7,7 @@
   <title>Mid term project</title>
   <meta name="description" content="Benvenuti nel sito realizzato da fabio petrone">
   <link rel="stylesheet" href="dist/app.css">
- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
@@ -15,71 +15,80 @@
   <div id="root">
     <!--inizio loader -->
     <div class="charger" v-if="loading">
-     <i class="fas fa-circle-notch"></i>
+      <i class="fas fa-circle-notch"></i>
     </div>
     <!-- fine loader -->
- <div class="wrapper">
+    <div class="wrapper">
 
-<header>
-<div class="header-left">
-  <div class="logo">
-    <img :src="srclogo" alt="logo">
-   </div>
-     </div>
-   <div class="header-right">
-     <ul>
-       <li v-for="head in headerData"><a href="">{{head.navElement}}</a></li>
-     </ul>
-     <ul>
-       <li><a href="">Store</a><span>new</span></li>
-       <li class="blue-button">Schedule a workout</li>
-       <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-       <li><a href=""><i class="fas fa-search"></i></a></li>
-     </ul>
-   </div>
-</header>
-<!-- inizio jumbotron -->
-<div class="jumbotron">
-  <div class="container">
-    <div class="jumbotron-left">
-      <h3>Certified fitness professional</h3>
-      <h1>Take control of your health</h1>
-      <img src="img/wave.svg" alt="wave">
-      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
-      <ul>
-        <li class="blue-button"><i class="fab fa-youtube"></i>  Visit my YouTube channel</li>
-        <li class="trasparent-button">Buy Avada today  <i class="fas fa-arrow-right"></i></li>
-      </ul>
+      <header>
+        <div class="header-left">
+          <div class="logo">
+            <img :src="srclogo" alt="logo">
+          </div>
+        </div>
+        <div class="header-right">
+          <ul>
+            <li v-for="head in headerData"><a href="">{{head.navElement}}</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Store</a><span>new</span></li>
+            <li class="blue-button">Schedule a workout</li>
+            <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href=""><i class="fas fa-search"></i></a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- inizio jumbotron -->
+      <div class="jumbotron">
+        <div class="container">
+          <div class="jumbotron-left">
+            <h3>Certified fitness professional</h3>
+            <h1>Take control of your health</h1>
+            <img src="img/wave.svg" alt="wave">
+            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
+            <ul>
+              <li class="blue-button"><i class="fab fa-youtube"></i>  Visit my YouTube channel</li>
+              <li class="trasparent-button">Buy Avada today  <i class="fas fa-arrow-right"></i></li>
+            </ul>
+          </div>
+          <div class="jumbotron-right">
+            <div class="jumbotron-right-play"><i class="fas fa-play"></i></div>
+          </div>
+        </div>
+      </div>
+      <!-- fine jumbotron -->
+      <!-- inizio main -->
+      <div class="main">
+        <!-- inizio main top -->
+        <div class="main-top">
+          <div class="container">
+            <div class="boxImg1">
+            </div>
+            <div class="boxImg2">
+            </div>
+            <div class="boxImg3">
+            </div>
+          </div>
+          <div class="main-top-description">
+            <h2>“How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser.”</h2>
+            <img src="img/wave.svg" alt="wave">
+            <ul>
+              <li><img src="img/avatar.jpg" alt="Brad Johnson"></li>
+              <li>Brad Johnson</li>
+              <li>Las Vegas</li>
+            </ul>
+          </div>
+        </div>
+        <!-- fine main top -->
+        <div class="main-center">
+
+        </div>
+        <div class="main-bottom">
+
+        </div>
+      </div>
+
     </div>
-    <div class="jumbotron-right">
-      <div class="jumbotron-right-play"><i class="fas fa-play"></i></div>
-    </div>
-  </div>
-</div>
-<!-- fine jumbotron -->
-<div class="main">
-<div class="main-top">
-<div class="container">
-<div class="boxImg">
-
-</div>
-<div class="boxImg">
-
-</div>
-<div class="boxImg">
-
-</div>
-</div>
-</div>
-<div class="main-center">
-
-</div>
-<div class="main-bottom">
-
-</div>
-</div>
-
- </div>
 
 
 
@@ -93,7 +102,7 @@
 
 
   </div>
-      <!-- fine root -->
-    <script src="action.js"></script>
+  <!-- fine root -->
+  <script src="action.js"></script>
 </body>
 </html>
