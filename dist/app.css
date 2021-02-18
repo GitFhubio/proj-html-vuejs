@@ -621,3 +621,40 @@ body {
   margin-top: 40px;
   font-size: 18px;
 }
+.wrapper .offers {
+  height: 600px;
+}
+.wrapper .offers .container {
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.wrapper .offers .container div {
+  text-align: center;
+  width: 25%;
+}
+.wrapper .offers .container div img:first-child {
+  width: 150px;
+  height: auto;
+}
+.wrapper .offers .container div img {
+  margin: 0 auto;
+  display: block;
+  width: 85px;
+}
+.wrapper .offers .container div p {
+  color: gray;
+  font-size: 18px;
+  padding: 0 35px;
+  line-height: 1.5;
+}
+.wrapper .offers .container div a {
+  display: inline-block;
+  font-weight: 500;
+  padding-top: 45px;
+  font-size: 18px;
+  color: #000000;
+}
+.wrapper .offers .container div a i {
+  vertical-align: middle;
+}

@@ -90,7 +90,7 @@ new Vue({
           link:'Learn about FC'
         },
         {
-          logo:'img/sponsor-4-2x.png',
+          logo:'img/sponsor-4-2x-200x103.png',
           description:'Proin in viverra maecenas et mattis ut nibh enim. Gravida ultricies mi porta lacus. Et posuere velit sed nec eleifend.',
           link:'Visit Power Gym'
         }

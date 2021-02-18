@@ -578,6 +578,44 @@ body {
   }
 }
 
+.offers {
+  height: 600px;
+  .container {
+    @include flex;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    div {
+      text-align: center;
+      width:25%;
+      img:first-child{
+        width:150px;
+        height:auto;
+      }
+      img {
+        margin:0 auto;
+        display:block;
+        width: 85px;
+      }
+      p {
+        color: gray;
+        font-size: 18px;
+        padding: 0 35px;
+        line-height: 1.5;
+      }
+      a{
+        display:inline-block;
+        font-weight: 500;
+        padding-top: 45px;
+        font-size: 18px;
+        color:$colorBlack;
+        i {
+          vertical-align: middle;
+        }
+      }
+    }
+
+}
+}
 
 
 // chiusura wrapper
