@@ -240,14 +240,14 @@
                 </div>
               </footer>
               <div class="popup">
-              <div class="Demos" @mouseenter="animationIn1" @mouseleave="animationOut1">
-             <i :class="fade1" class="fas fa-folder"></i>
-              <p>Demos</p>
+              <div v-for="(popup,ind) in popups" class="Demos" @mouseenter="animationIn(ind)" @mouseleave="animationOut(ind)">
+             <i :class="[popup.icon,popup.fade]"></i>
+              <p>{{popup.name}}</p>
               </div>
-              <div class="Buy Now"  @mouseenter="animationIn2" @mouseleave="animationOut2">
+              <!-- <div class="Buy Now"  @mouseenter="animationIn2" @mouseleave="animationOut2">
               <i :class="fade2" class="fas fa-shopping-cart"></i>
               <p>Buy Now</p>
-              </div>
+              </div> -->
               </div>
   <!-- chiusura wrapper -->
     </div>

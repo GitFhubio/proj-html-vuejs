@@ -1,8 +1,7 @@
 new Vue({
   el: '#root',
   data: {
-    fade1:'',
-    fade2:'',
+    indexActive:'',
     loading:false,
       srclogo:'img/logo.png',
       headerData:[
@@ -11,6 +10,14 @@ new Vue({
         { navElement: 'About' },
         { navElement: 'Videos' },
         { navElement: 'Blog' }
+      ],
+      popups:[
+        { name: 'Demos' ,
+        icon:'fas fa-folder',
+          fade:''},
+        { name: 'buy Now',
+        icon:'fas fa-shopping-cart',
+      fade:''},
       ],
       services:[
           {
@@ -123,18 +130,17 @@ new Vue({
           ],
   },
   methods:{
-      animationIn1(){
-      this.fade1="fadeIn";
-      },
-      animationOut1(){
-      this.fade1="fadeOut"
+    nowActive(ind){
+      this.indexActive=ind;
     },
-    animationIn2(){
-    this.fade2="fadeIn";
+      animationIn(ind){
+      this.popups[ind].fade="fadeIn";
+      console.log('entro')
     },
-    animationOut2(){
-    this.fade2="fadeOut"
-  },
+      animationOut(ind){
+        this.popups[ind].fade="fadeOut";
+      console.log('esco');
+    },
     refreshPage(){
       location.reload();
     }
