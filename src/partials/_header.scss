@@ -50,6 +50,7 @@
     >ul {
       @include listInline;
       >li {
+        cursor:pointer;
         margin: 20px;
         a {
           text-decoration: none;

@@ -46,6 +46,7 @@
       color: $colorSilver;
       &:last-child {
         @include flex;
+        cursor:pointer;
         align-items:center;
         justify-content: center;
         font-weight: 500;
@@ -86,7 +87,7 @@
     }
     .articles{
       @include flex;
-      cursor: pointer;
+      cursor:pointer;
       .article {
         @include flex;
         flex-direction: column;
@@ -120,10 +121,12 @@
           @include listInline;
           padding:0 10px;
           li {
+            cursor:text;
             color: $primary_bgcolor;
             opacity:0.7;
             font-size: 18px;
             span{
+              cursor:pointer;
               opacity:1;
               &:hover{
                 color:$colorBlue;

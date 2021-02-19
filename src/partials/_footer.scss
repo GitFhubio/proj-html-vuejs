@@ -29,6 +29,7 @@ footer{
           .socialNetworks {
             @include listInline;
             padding-top: 40px;
+            cursor:pointer;
             li {
               position:relative;
               padding: 10px;
@@ -59,7 +60,7 @@ footer{
               }
               ul {
                 text-align: center;
-                li {
+                li {cursor:pointer;
                     font-size: 20px;
                     padding-top: 32px;
                 }
@@ -102,6 +103,7 @@ footer{
       @include listInline;
       color: $colorSilver;
       span {
+        cursor:pointer;
         color: $primary_textcolor;
         &:hover {
           color: $colorOrange;

@@ -52,6 +52,7 @@ header .header-right > ul {
   align-items: baseline;
 }
 header .header-right > ul > li {
+  cursor: pointer;
   margin: 20px;
 }
 header .header-right > ul > li a {
@@ -159,6 +160,7 @@ header .header-right .blue-button:hover {
   width: 100px;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,6 +296,7 @@ header .header-right .blue-button:hover {
   width: 100px;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,6 +416,7 @@ header .header-right .blue-button:hover {
   width: 100px;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -686,6 +690,7 @@ header .header-right .blue-button:hover {
 }
 .products .product p:last-child {
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   font-weight: 500;
@@ -764,11 +769,13 @@ header .header-right .blue-button:hover {
   padding: 0 10px;
 }
 .latest-articles .container .articles .article ul li {
+  cursor: text;
   color: #000000;
   opacity: 0.7;
   font-size: 18px;
 }
 .latest-articles .container .articles .article ul li span {
+  cursor: pointer;
   opacity: 1;
 }
 .latest-articles .container .articles .article ul li span:hover {
@@ -853,6 +860,7 @@ footer .container .footer-top .brand-section .socialNetworks {
   list-style: none;
   align-items: baseline;
   padding-top: 40px;
+  cursor: pointer;
 }
 footer .container .footer-top .brand-section .socialNetworks li {
   position: relative;
@@ -886,6 +894,7 @@ footer .container .footer-top .recent-posts ul {
   text-align: center;
 }
 footer .container .footer-top .recent-posts ul li {
+  cursor: pointer;
   font-size: 20px;
   padding-top: 32px;
 }
@@ -926,6 +935,7 @@ footer .footer-bottom ul {
   color: #bcbcbc;
 }
 footer .footer-bottom ul span {
+  cursor: pointer;
   color: #fff;
 }
 footer .footer-bottom ul span:hover {
@@ -1213,6 +1223,7 @@ body {
   width: 65px;
   margin-bottom: 10px;
   height: 65px;
+  cursor: pointer;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -1222,6 +1233,7 @@ body {
 }
 
 #scrollTopButton {
+  cursor: pointer;
   padding: 6px 20px;
   border-radius: 7px 7px 0 0;
   color: #fff;

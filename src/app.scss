@@ -79,6 +79,7 @@ body {
     width:65px;
     margin-bottom: 10px;
     height:65px;
+    cursor:pointer;
     background-color: #fff;
     border-radius:5px;
     p{padding-top: 4px;
@@ -89,6 +90,7 @@ body {
 }
 
 #scrollTopButton{
+  cursor:pointer;
   padding:6px 20px;
   border-radius:7px 7px 0 0 ;
   color:$primary_textcolor;
