@@ -172,6 +172,8 @@ new Vue({
     ,    showDrop(index){
       if (index!= 0 && index!= 4){
           this.indexNav=index;
+        } else {
+          this.indexNav='';
         }}
         ,
         hideDrop(){

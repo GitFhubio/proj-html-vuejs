@@ -71,20 +71,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.wrapper .header-left img {
+.wrapper header .header-left img {
   margin-left: 20px;
   cursor: pointer;
 }
-.wrapper .header-right {
+.wrapper header .header-right {
   display: flex;
 }
-.wrapper .header-right ul:first-child {
+.wrapper header .header-right ul:first-child {
   padding-top: 11px;
 }
-.wrapper .header-right ul:first-child li {
+.wrapper header .header-right ul:first-child li {
   position: relative;
 }
-.wrapper .header-right ul:first-child li .dropdown {
+.wrapper header .header-right ul:first-child li .dropdown {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -94,13 +94,13 @@ body {
   top: 40px;
   color: #fff;
 }
-.wrapper .header-right ul:first-child li .dropdown li {
+.wrapper header .header-right ul:first-child li .dropdown li {
   padding: 10px 15px;
 }
-.wrapper .header-right ul:first-child li .dropdown li:hover {
+.wrapper header .header-right ul:first-child li .dropdown li:hover {
   background-color: #505050;
 }
-.wrapper .header-right ul:first-child > li:last-child:after {
+.wrapper header .header-right ul:first-child > li:last-child:after {
   content: "new";
   padding: 5px 7px;
   margin-left: 10px;
@@ -109,23 +109,23 @@ body {
   color: #060606;
   background-color: #FFF941;
 }
-.wrapper .header-right > ul {
+.wrapper header .header-right > ul {
   display: flex;
   list-style: none;
   align-items: baseline;
 }
-.wrapper .header-right > ul > li {
+.wrapper header .header-right > ul > li {
   margin: 20px;
 }
-.wrapper .header-right > ul > li a {
+.wrapper header .header-right > ul > li a {
   text-decoration: none;
   color: #bcbcbc;
   font-weight: 500;
 }
-.wrapper .header-right > ul > li a:hover {
+.wrapper header .header-right > ul > li a:hover {
   color: #fff;
 }
-.wrapper .header-right .blue-button {
+.wrapper header .header-right .blue-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
@@ -134,7 +134,7 @@ body {
   font-weight: 500;
   font-size: 14px;
 }
-.wrapper .header-right .blue-button:hover {
+.wrapper header .header-right .blue-button:hover {
   background-color: #ec5a57;
 }
 .wrapper .jumbotron {
@@ -318,11 +318,8 @@ body {
   position: relative;
 }
 .wrapper .main-center-left img {
+  border-radius: 4px 4px 40px 4px;
   position: absolute;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 770px;
   width: 660px;
   transform: translateY(-8%);

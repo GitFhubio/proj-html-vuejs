@@ -52,7 +52,6 @@ body {
   @include flex;
     justify-content: space-between;
     align-items: center;
-  }
 
   .header-left {
     img {
@@ -111,6 +110,7 @@ body {
       font-size: 14px;
     }
   }
+}
 // inizio jumbotron
 .jumbotron {
   height: 630px;
@@ -272,9 +272,8 @@ body {
     width: 50%;
     position: relative;
     img {
+      border-radius: 4px 4px 40px 4px;
       position: absolute;
-      object-position: center;
-      object-fit: cover;
       height: 770px;
       width: 660px;
       transform: translateY(-8%);
