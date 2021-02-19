@@ -654,7 +654,7 @@ body {
     @include flex;
     padding-top: 90px;
     padding-bottom: 90px;
-    div {
+    .offer {
       text-align: center;
       width:25%;
       img {
@@ -885,7 +885,9 @@ animation: fade ease 2s;
 @include fade-in;
 @include fade-out;
 @include fade;
-
+@include fade-left;
+@include fade-right;
+@include fade-top;
 /* inViewport */
 
 [data-inviewport="scale-in"] {
@@ -894,4 +896,14 @@ animation: fade ease 2s;
 }
 [data-inviewport="scale-in"].is-inViewport {
   transform: scale(1);
+}
+
+[data-inviewport="fade-left"].is-inViewport {
+  animation: fade-left 0.8s;
+}
+[data-inviewport="fade-right"].is-inViewport {
+  animation: fade-right 0.8s;
+}
+[data-inviewport="fade-top"].is-inViewport {
+  animation: fade-top 0.8s;
 }

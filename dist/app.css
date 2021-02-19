@@ -727,28 +727,28 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.wrapper .offers .container div {
+.wrapper .offers .container .offer {
   text-align: center;
   width: 25%;
 }
-.wrapper .offers .container div img {
+.wrapper .offers .container .offer img {
   margin: 0 auto;
   display: block;
   width: 85px;
   filter: invert(80%);
 }
-.wrapper .offers .container div img:first-child {
+.wrapper .offers .container .offer img:first-child {
   width: 150px;
   height: auto;
   filter: none;
 }
-.wrapper .offers .container div p {
+.wrapper .offers .container .offer p {
   color: gray;
   font-size: 18px;
   padding: 0 35px;
   line-height: 1.5;
 }
-.wrapper .offers .container div p:last-child {
+.wrapper .offers .container .offer p:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -757,10 +757,10 @@ body {
   font-size: 18px;
   color: #000000;
 }
-.wrapper .offers .container div p:last-child a {
+.wrapper .offers .container .offer p:last-child a {
   color: #000000;
 }
-.wrapper .offers .container div p:last-child i {
+.wrapper .offers .container .offer p:last-child i {
   padding: 8px;
 }
 .wrapper .final-jumbotron {
@@ -1040,6 +1040,54 @@ body {
     opacity: 1;
   }
 }
+@-webkit-keyframes fade-left {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes fade-left {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes fade-right {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes fade-right {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@-webkit-keyframes fade-top {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes fade-top {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 0;
+  }
+}
 /* inViewport */
 [data-inviewport=scale-in] {
   transition: 2s;
@@ -1048,4 +1096,19 @@ body {
 
 [data-inviewport=scale-in].is-inViewport {
   transform: scale(1);
+}
+
+[data-inviewport=fade-left].is-inViewport {
+  -webkit-animation: fade-left 0.8s;
+          animation: fade-left 0.8s;
+}
+
+[data-inviewport=fade-right].is-inViewport {
+  -webkit-animation: fade-right 0.8s;
+          animation: fade-right 0.8s;
+}
+
+[data-inviewport=fade-top].is-inViewport {
+  -webkit-animation: fade-top 0.8s;
+          animation: fade-top 0.8s;
 }
