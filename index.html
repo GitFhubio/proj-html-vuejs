@@ -174,15 +174,14 @@
             <div class="article" v-for="article in articles">
               <div data-inviewport="slide-left" class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
                 <div class="layover">
-
                 </div>
               <!-- <img :src="article.photo" alt="foto articolo"> -->
                </div>
               <h5>{{article.title}}</h5>
               <ul>
-                <li>By <span>{{article.author}}</span> |</li>
+                <li>By <span>{{article.author}}</span></li>
                 <li> {{article.date}} </li>
-                <li> | <span>{{article.category}}</span></li>
+                <li><span>{{article.category}}</span></li>
               </ul>
             </div>
           </div>

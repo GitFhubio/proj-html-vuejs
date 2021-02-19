@@ -109,6 +109,16 @@ footer{
           color: $colorOrange;
         }
       }
+      li{position:relative;
+      padding:0 4px;}
+      li:after{
+        content:'|';
+        padding:0 4px;
+        position:absolute;
+      }
+      li:last-child:after{
+        content:'';
+      }
     }
   }
 }

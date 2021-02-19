@@ -121,6 +121,10 @@
           @include listInline;
           padding:0 10px;
           li {
+            padding:0 10px;
+            &:first-child{
+              padding-left:0;
+            }
             cursor:text;
             color: $primary_bgcolor;
             opacity:0.7;
@@ -132,6 +136,14 @@
                 color:$colorBlue;
               }
             }
+            &:not(:last-child){position:relative;
+            &:after{
+            position:absolute;
+            content:'|';
+            padding:0 8px;
+          }
+
+          }
           }
         }
       }

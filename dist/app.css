@@ -776,10 +776,14 @@ header .header-right .blue-button:hover {
   padding: 0 10px;
 }
 .latest-articles .container .articles .article ul li {
+  padding: 0 10px;
   cursor: text;
   color: #000000;
   opacity: 0.7;
   font-size: 18px;
+}
+.latest-articles .container .articles .article ul li:first-child {
+  padding-left: 0;
 }
 .latest-articles .container .articles .article ul li span {
   cursor: pointer;
@@ -787,6 +791,14 @@ header .header-right .blue-button:hover {
 }
 .latest-articles .container .articles .article ul li span:hover {
   color: #4154FF;
+}
+.latest-articles .container .articles .article ul li:not(:last-child) {
+  position: relative;
+}
+.latest-articles .container .articles .article ul li:not(:last-child):after {
+  position: absolute;
+  content: "|";
+  padding: 0 8px;
 }
 
 .offers {
@@ -948,6 +960,18 @@ footer .footer-bottom ul span {
 }
 footer .footer-bottom ul span:hover {
   color: #ec5a57;
+}
+footer .footer-bottom ul li {
+  position: relative;
+  padding: 0 4px;
+}
+footer .footer-bottom ul li:after {
+  content: "|";
+  padding: 0 4px;
+  position: absolute;
+}
+footer .footer-bottom ul li:last-child:after {
+  content: "";
 }
 
 @-webkit-keyframes fade-out {
