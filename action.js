@@ -2,6 +2,7 @@ new Vue({
   el: '#root',
   data: {
     indexActive:'',
+    TopButtonVisibility:false,
     indexSocial:'',
     indexNav:'',
     loading:false,
@@ -178,10 +179,14 @@ new Vue({
         ,
         hideDrop(){
           this.indexNav='';
-        }
-  },
-    mounted(){
         },
+        moveToTop(){
+     document.documentElement.scrollTop = 0;
+},
+
+},
+    mounted(){}
+,
         created: function(){
           setTimeout(() => {
             this.loading = false;
@@ -195,6 +200,15 @@ Vue.config.devtools = true;
 
 
 
+var mybutton = document.getElementById("scrollTopButton");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
 
 const inViewport = (entries, observer) => {

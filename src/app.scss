@@ -861,6 +861,18 @@ footer{
   }
 }
 
+#scrollTopButton{
+  padding:6px 20px;
+  border-radius:7px 7px 0 0 ;
+  color:$primary_textcolor;
+  background-color: $colorGrey;
+  position:fixed;
+  bottom:0;
+  right:100px;
+  &:hover{
+    background-color: $colorBlue;
+  }
+}
 // chiusura wrapper
 }
 .fadeIn {

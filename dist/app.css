@@ -930,6 +930,18 @@ body {
   padding-top: 4px;
   font-size: 13px;
 }
+.wrapper #scrollTopButton {
+  padding: 6px 20px;
+  border-radius: 7px 7px 0 0;
+  color: #fff;
+  background-color: #060606;
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+}
+.wrapper #scrollTopButton:hover {
+  background-color: #4154FF;
+}
 
 .fadeIn {
   -webkit-animation: fade-in 0.15s;
