@@ -42,7 +42,8 @@
     }
     .blue-button {
       @include blueBtn;
-      font-size: 14px;
+      padding:18px 26px;
+      font-size: 18px;
     }
     .trasparent-button {
       @include trasparentBtn;

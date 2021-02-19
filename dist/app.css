@@ -125,7 +125,8 @@ header .header-right .blue-button:hover {
   cursor: pointer;
   background-color: #4154FF;
   font-weight: 500;
-  font-size: 14px;
+  padding: 18px 26px;
+  font-size: 18px;
 }
 .jumbotron-left ul .blue-button:hover {
   background-color: #ec5a57;
