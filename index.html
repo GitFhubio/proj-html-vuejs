@@ -206,7 +206,7 @@
                        <img :src="srclogo" alt="Avada logo">
                        <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.</p>
                      <ul class="socialNetworks">
-                       <li v-for="icon in socialIcons"><i :class="icon.name"></i></li>
+                       <li v-for="social in socialIcons"><i :class="social.icon"></i></li>
                      </ul>
                     </div>
                     <div class="recent-posts">
@@ -219,8 +219,8 @@
                       <h6>Contact Informations</h6>
                       <ul>
                          <li>{{contacts.address}}</li>
-                        <li>{{contacts.mobile}}</li>
-                        <li>{{contacts.email}}</li>
+                        <li>Mobile: {{contacts.mobile}}</li>
+                        <li>Email: {{contacts.email}}</li>
                       </ul>
                     </div>
                   </div>

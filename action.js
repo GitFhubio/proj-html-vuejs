@@ -122,16 +122,16 @@ new Vue({
         }
       ],
         socialIcons:[
-            { name: 'fab fa-facebook-f' },
-            { name: 'fab fa-twitter', },
-            { name: 'fab fa-youtube', },
-            { name: 'fab fa-instagram', },
-            { name: 'fab fa-linkedin-in' }
+            { icon: 'fab fa-facebook-f',name:'facebook' },
+            { icon: 'fab fa-twitter',name:'twitter' },
+            { icon: 'fab fa-youtube',name:'youtube' },
+            { icon: 'fab fa-instagram',name:'instagram' },
+            { icon: 'fab fa-linkedin-in',name:'linkedin' }
           ],
           posts:['The best protein shake','Ultimate cardio workout','New juices available now','Tips to find training partners','20 best healthy recipes'
         ],
         contacts:{address: '4746 Tipple Road Michigan 48449',
-        mobile:"1.800.000.000'",
+        mobile:"1.800.000.000",
         email:"info@your-company.com"},
         rights:[
           '© Copyright 2012 - 2021',

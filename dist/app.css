@@ -104,7 +104,7 @@ body {
   color: #060606;
   background-color: #FFF941;
 }
-.wrapper .blue-button {
+.wrapper .header-right .blue-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
@@ -113,7 +113,7 @@ body {
   font-weight: 500;
   font-size: 14px;
 }
-.wrapper .blue-button:hover {
+.wrapper .header-right .blue-button:hover {
   background-color: #ec5a57;
 }
 .wrapper .jumbotron {
@@ -158,6 +158,18 @@ body {
 }
 .wrapper .jumbotron-left ul li:nth-child(2) {
   margin-left: 10px;
+}
+.wrapper .jumbotron-left ul .blue-button {
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4154FF;
+  font-weight: 500;
+  font-size: 14px;
+}
+.wrapper .jumbotron-left ul .blue-button:hover {
+  background-color: #ec5a57;
 }
 .wrapper .jumbotron-left ul .trasparent-button {
   padding: 15px 30px;
@@ -488,13 +500,25 @@ body {
 .wrapper .jumbotron-content ul li {
   font-size: 18px;
 }
+.wrapper .jumbotron-content ul .blue-button {
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4154FF;
+  font-weight: 500;
+  text-align: center;
+  width: 230px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+.wrapper .jumbotron-content ul .blue-button:hover {
+  background-color: #ec5a57;
+}
 .wrapper .jumbotron-content ul input {
-  padding: 15px 350px 15px 30px;
+  padding: 15px 340px 15px 30px;
   border-radius: 40px;
   margin-right: 15px;
-}
-.wrapper .jumbotron-content ul i {
-  vertical-align: middle;
 }
 .wrapper .products {
   height: 720px;
@@ -659,18 +683,19 @@ body {
   font-weight: 400;
   color: #fff;
 }
-.wrapper .third-jumbotron a {
+.wrapper .third-jumbotron .blue-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
   cursor: pointer;
   background-color: #4154FF;
   font-weight: 500;
+  font-size: 14px;
   width: 230px;
   margin-top: 40px;
   font-size: 18px;
 }
-.wrapper .third-jumbotron a:hover {
+.wrapper .third-jumbotron .blue-button:hover {
   background-color: #ec5a57;
 }
 .wrapper .offers {
@@ -778,6 +803,7 @@ body {
   font-size: 20px;
   text-align: center;
   color: #fff;
+  opacity: 0.8;
 }
 .wrapper footer .container .footer-top .brand-section ul {
   display: flex;
@@ -824,7 +850,8 @@ body {
   font-size: 20px;
 }
 .wrapper footer .container .footer-top .contact-informations ul li:first-child {
-  padding: 32px 0;
+  margin: 30px 0;
+  opacity: 0.8;
 }
 .wrapper footer .footer-bottom {
   height: 100px;
