@@ -5,12 +5,13 @@ new Vue({
     indexSocial:'',
     loading:false,
       srclogo:'img/logo.png',
-      headerData:[
-        { navElement: 'Home' },
-        { navElement: 'Services' },
-        { navElement: 'About' },
-        { navElement: 'Videos' },
-        { navElement: 'Blog' }
+      menulist:[
+        { voce: 'Home' },
+        { voce: 'Services' },
+        { voce: 'About' },
+        { voce: 'Videos' },
+        { voce: 'Blog' },
+        { voce: 'Store'}
       ],
       popups:[
         { name: 'Demos' ,
