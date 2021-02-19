@@ -854,5 +854,15 @@ footer{
     animation: fade-out .15s;
     position: relative;
 }
+
+.fade {
+animation: fade ease 2s;
+// -webkit-animation: fade ease 2s;
+// -moz-animation: fade ease 2s;
+// -o-animation: fade ease 2s;
+// -ms-animation: fade ease 2s;
+}
+
 @include fade-in;
 @include fade-out;
+@include fade;

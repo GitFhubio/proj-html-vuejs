@@ -925,6 +925,11 @@ body {
   position: relative;
 }
 
+.fade {
+  -webkit-animation: fade ease 2s;
+          animation: fade ease 2s;
+}
+
 @-webkit-keyframes fade-in {
   0% {
     left: 0;
@@ -996,5 +1001,21 @@ body {
   100% {
     right: 0;
     top: 0;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

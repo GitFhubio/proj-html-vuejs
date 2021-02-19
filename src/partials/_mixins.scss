@@ -132,4 +132,12 @@ background-color: $primary_textcolor;
         top: 0;
     }
 }
+
+}
+@mixin fade{
+@keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
 }
