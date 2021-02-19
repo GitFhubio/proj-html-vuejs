@@ -183,18 +183,18 @@ new Vue({
         moveToTop(){
      document.documentElement.scrollTop = 0;
 },
+scrollFunction() {
+  if (document.documentElement.scrollTop > 20) {
+    this.TopButtonVisible=true;
+  } else {
+    this.TopButtonVisible=false;
+  }
+}
 
 },
     mounted(){
      let self=this;
-      window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-        if (document.documentElement.scrollTop > 20) {
-          self.TopButtonVisible=true;
-        } else {
-          self.TopButtonVisible=false;
-        }
-      }
+      window.onscroll = function() {self.scrollFunction()};
 
       const inViewport = (entries, observer) => {
         entries.forEach(entry => {
