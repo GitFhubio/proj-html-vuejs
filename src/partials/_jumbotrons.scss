@@ -12,6 +12,7 @@
   }
 
 &-left {
+  width:70%;
   h3 {
     padding-top:100px;
     font-size: 27px;
@@ -56,7 +57,7 @@
 &-right {
   width: 30%;
   padding-top:100px;
-  display: flex;
+  @include flex;
   justify-content: center;
   align-items: center;
   &-play {
@@ -166,15 +167,19 @@
 }
 
 .final-jumbotron{
-  @include flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
   height:530px;
   background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 background-image: linear-gradient(151deg,rgba(6, 25, 231, 0.4) 35%, rgba(206,1, 18, 0.4) 100%), url('../img/banner14-2x.jpg');
+>div{
+  @include flex;
+  position:relative;
+  width:$full_width;
+  height:$full_height;
+flex-direction: column;
+align-items:center;
+justify-content:center;
 .play{
   @include playCircle;
   @include flex;
@@ -195,5 +200,6 @@ h1,a{
 }
 h2{
   color:$colorYellow;
+}
 }
 }

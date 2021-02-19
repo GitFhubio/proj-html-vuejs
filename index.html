@@ -87,10 +87,9 @@
         <!-- inizio main-center -->
         <div class="main-center">
             <div data-inviewport="slide-left" class="main-center-left">
-              <img src="img/box.jpg" alt="box">
               <div class="main-center-left-play"><i class="fas fa-play"></i></div>
             </div>
-            <div class="main-center-right">
+            <div data-inviewport="slide-right" class="main-center-right">
               <p>Tune up your workouts</p>
               <h2>The best health & fitness advice online</h2>
               <div class="youtube">
@@ -199,7 +198,7 @@
           </div>
           <div class="offers">
             <div class="container">
-              <div class="offer" v-for="offer in offers">
+              <div data-inviewport="slide-top" class="offer" v-for="offer in offers">
                 <img :src="offer.logo" alt="logo offerta">
                 <img src="img/wave.svg" alt="wave">
                 <p>{{offer.description}}</p>
@@ -208,10 +207,12 @@
             </div>
           </div>
           <div class="final-jumbotron">
-             <div class="play"><i class="fas fa-play"></i></div>
+            <div data-inviewport="slide-top">
+              <div class="play"><i class="fas fa-play"></i></div>
                 <h1>Crossfit workout of the day</h1>
                 <h2>November 15th, 2019</h2>
                   <a href="#">View all videos →</a>
+              </div>
               </div>
               <footer>
                 <div class="container">
