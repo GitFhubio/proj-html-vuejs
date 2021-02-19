@@ -167,9 +167,9 @@
                </div>
               <h5>{{article.title}}</h5>
               <ul>
-                <li>By <span>{{article.author}} | </span></li>
+                <li>By <span>{{article.author}}</span> |</li>
                 <li> {{article.date}} </li>
-                <li><span> | {{article.category}}</span></li>
+                <li> | <span>{{article.category}}</span></li>
               </ul>
             </div>
           </div>
@@ -189,7 +189,7 @@
                 <img :src="offer.logo" alt="logo offerta">
                 <img src="img/wave.svg" alt="wave">
                 <p>{{offer.description}}</p>
-                <a>{{offer.link}} <i class="fas fa-angle-right"></i></a>
+                <p><a href="">{{offer.link}}</a><i class="fas fa-angle-right"></i></p>
               </div>
             </div>
           </div>
@@ -212,29 +212,21 @@
                     <div class="recent-posts">
                      <h6>Recent posts</h6>
                       <ul>
-                        <li><i class="fas fa-angle-right"></i>The best protein shake</li>
-                        <li><i class="fas fa-angle-right"></i>Ultimate cardio workout</li>
-                        <li><i class="fas fa-angle-right"></i>New juices available now</li>
+                        <li v-for="post in posts"><i class="fas fa-angle-right"></i>{{post}}</li>
                       </ul>
                     </div>
                     <div class="contact-informations">
                       <h6>Contact Informations</h6>
                       <ul>
-                        <li>4746 Tipple Road Michigan 48449</li>
-                        <li>Mobile : 1.800.000.0000</li>
-                        <li>Email : info@your-company.com</li>
+                         <li>{{contacts.address}}</li>
+                        <li>{{contacts.mobile}}</li>
+                        <li>{{contacts.email}}</li>
                       </ul>
                     </div>
                   </div>
                   <div class="footer-bottom">
                     <ul>
-                      <li>© Copyright 2012 - 2021</li>
-                      <li>|</li>
-                      <li>Avada theme by <span>ThemeFusion</span></li>
-                      <li>|</li>
-                      <li>All rights reserved</li>
-                      <li>|</li>
-                      <li>Powered by <span>WordPress</span></li>
+                      <li v-html="copy" v-for="copy in rights">{{copy}}</li>
                     </ul>
                   </div>
                 </div>

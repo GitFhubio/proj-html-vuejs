@@ -15,7 +15,7 @@ new Vue({
         { name: 'Demos' ,
         icon:'fas fa-folder',
           fade:''},
-        { name: 'buy Now',
+        { name: 'Buy Now',
         icon:'fas fa-shopping-cart',
       fade:''},
       ],
@@ -128,6 +128,18 @@ new Vue({
             { name: 'fab fa-instagram', },
             { name: 'fab fa-linkedin-in' }
           ],
+          posts:['The best protein shake','Ultimate cardio workout','New juices available now','Tips to find training partners','20 best healthy recipes'
+        ],
+        contacts:{address: '4746 Tipple Road Michigan 48449',
+        mobile:"1.800.000.000'",
+        email:"info@your-company.com"},
+        rights:[
+          '© Copyright 2012 - 2021',
+          'Avada theme by <span>ThemeFusion</span>',
+          'All rights reserved',
+          'Powered by <span>WordPress</span>'
+        ]
+
   },
   methods:{
     nowActive(ind){
