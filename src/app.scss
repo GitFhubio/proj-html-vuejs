@@ -885,3 +885,13 @@ animation: fade ease 2s;
 @include fade-in;
 @include fade-out;
 @include fade;
+
+/* inViewport */
+
+[data-inviewport="scale-in"] {
+  transition: 2s;
+  transform: scale(0.1);
+}
+[data-inviewport="scale-in"].is-inViewport {
+  transform: scale(1);
+}

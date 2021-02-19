@@ -190,3 +190,20 @@ new Vue({
 })
 
 Vue.config.devtools = true;
+
+
+
+
+
+const inViewport = (entries, observer) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+  });
+};
+const Obs = new IntersectionObserver(inViewport);
+const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+const elements_inViewport = document.querySelectorAll('[data-inviewport]');
+elements_inViewport.forEach(element => {
+  Obs.observe(element, obsOptions);
+});
