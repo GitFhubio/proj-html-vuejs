@@ -469,6 +469,9 @@ header .header-right .blue-button:hover {
   width: 75%;
   background-color: #CF000F;
 }
+.main-center-right .youtube .subscribe > div:hover {
+  background-color: #a51b0b;
+}
 .main-center-right .youtube .subscribe > div .dropdown:hover .dropdown-content {
   display: flex;
 }
