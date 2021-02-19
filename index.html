@@ -28,7 +28,11 @@
         </div>
         <div class="header-right">
           <ul>
-            <li v-for="menu in menulist"><a href="">{{menu.voce}}</a></li>
+            <li v-for="(menu,index) in menulist" @mouseenter="showDrop(index)" @mouseleave="hideDrop"><a href="">{{menu.voce}}</a>
+              <div v-if="indexNav === index" class="dropdown">
+                 <p v-for="item in menu.content">{{item}}</p>
+              </div>
+            </li>
           </ul>
           <ul>
             <li class="blue-button">Schedule a workout</li>

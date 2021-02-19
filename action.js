@@ -3,15 +3,20 @@ new Vue({
   data: {
     indexActive:'',
     indexSocial:'',
+    indexNav:'',
     loading:false,
       srclogo:'img/logo.png',
       menulist:[
-        { voce: 'Home' },
-        { voce: 'Services' },
-        { voce: 'About' },
-        { voce: 'Videos' },
+        { voce: 'Home'},
+        { voce: 'Services',
+          content:['All Services','Service Single Page'] },
+        { voce: 'About',
+          content:['About me','Our Sponsor','Contact']  },
+        { voce: 'Videos',
+        content:['All Playlists','Playlist Page','Video Single Page']   },
         { voce: 'Blog' },
-        { voce: 'Store'}
+        { voce: 'Store',
+        content:['Single Product','Variable Product'] }
       ],
       popups:[
         { name: 'Demos' ,
@@ -164,6 +169,14 @@ new Vue({
     hideNameSocial(){
       this.indexSocial='';
     }
+    ,    showDrop(index){
+      if (index!= 0 && index!= 4){
+          this.indexNav=index;
+        }}
+        ,
+        hideDrop(){
+          this.indexNav='';
+        }
   },
     mounted(){
         },

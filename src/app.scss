@@ -64,6 +64,20 @@ body {
  @include flex;
     ul:first-child {
       padding-top: 11px;
+      li{ position:relative;
+        .dropdown{
+          width:max-content;
+          padding:20px;
+          background-color: $colorGrey;
+          opacity:0.9;
+          position:absolute;
+          top:40px;
+          color: $primary_textcolor;
+          p{
+            margin:10px 0;
+          }
+        }
+      }
       li:last-child:after{
                content:'new';
                padding: 5px 7px;
