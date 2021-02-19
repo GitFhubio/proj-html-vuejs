@@ -2,7 +2,7 @@ new Vue({
   el: '#root',
   data: {
     indexActive:'',
-    TopButtonVisibility:false,
+    TopButtonVisible:false,
     indexSocial:'',
     indexNav:'',
     loading:false,
@@ -185,9 +185,33 @@ new Vue({
 },
 
 },
-    mounted(){}
+    mounted(){
+     let self=this;
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+          self.TopButtonVisible=true;
+        } else {
+          self.TopButtonVisible=false;
+        }
+      }
+
+      const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+          entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+        });
+      };
+      const Obs = new IntersectionObserver(inViewport);
+      const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+      const elements_inViewport = document.querySelectorAll('[data-inviewport]');
+      elements_inViewport.forEach(element => {
+        Obs.observe(element, obsOptions);
+      });
+
+
+    }
 ,
-        created: function(){
+  created: function(){
           setTimeout(() => {
             this.loading = false;
           }, 1500)
@@ -197,29 +221,3 @@ new Vue({
 })
 
 Vue.config.devtools = true;
-
-
-
-var mybutton = document.getElementById("scrollTopButton");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-
-const inViewport = (entries, observer) => {
-  entries.forEach(entry => {
-    entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-  });
-};
-const Obs = new IntersectionObserver(inViewport);
-const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
-
-const elements_inViewport = document.querySelectorAll('[data-inviewport]');
-elements_inViewport.forEach(element => {
-  Obs.observe(element, obsOptions);
-});
