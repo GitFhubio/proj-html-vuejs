@@ -734,12 +734,25 @@ footer{
             color: $primary_textcolor;
             opacity:0.8;
           }
-          ul {
+          .socialNetworks {
             @include listInline;
             padding-top: 40px;
             li {
+              position:relative;
               padding: 10px;
               color: $colorOrange;
+              .dropdown{
+                left:50%;
+                transform: translate(-50%,0);
+                color:$primary_textcolor;
+                width:max-content;
+                padding:4px;
+                border-radius:2px;
+                background-color:#505050;
+                font-size: 11px;
+                position:absolute;
+                top:-13px;
+              }
             }
           }
         }

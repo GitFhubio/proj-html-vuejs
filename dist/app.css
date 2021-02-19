@@ -805,15 +805,30 @@ body {
   color: #fff;
   opacity: 0.8;
 }
-.wrapper footer .container .footer-top .brand-section ul {
+.wrapper footer .container .footer-top .brand-section .socialNetworks {
   display: flex;
   list-style: none;
   align-items: baseline;
   padding-top: 40px;
 }
-.wrapper footer .container .footer-top .brand-section ul li {
+.wrapper footer .container .footer-top .brand-section .socialNetworks li {
+  position: relative;
   padding: 10px;
   color: #ec5a57;
+}
+.wrapper footer .container .footer-top .brand-section .socialNetworks li .dropdown {
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: #505050;
+  font-size: 11px;
+  position: absolute;
+  top: -13px;
 }
 .wrapper footer .container .footer-top .recent-posts {
   width: 370px;

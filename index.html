@@ -206,7 +206,11 @@
                        <img :src="srclogo" alt="Avada logo">
                        <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.</p>
                      <ul class="socialNetworks">
-                       <li v-for="social in socialIcons"><i :class="social.icon"></i></li>
+                       <li v-for="(social,index) in socialIcons"><i :class="social.icon" @mouseenter="showNameSocial(index)" @mouseleave="hideNameSocial"></i>
+                        <div v-if="indexSocial === index" class="dropdown">
+                         {{social.name}}
+                        </div>
+                       </li>
                      </ul>
                     </div>
                     <div class="recent-posts">

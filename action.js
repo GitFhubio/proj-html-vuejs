@@ -2,6 +2,7 @@ new Vue({
   el: '#root',
   data: {
     indexActive:'',
+    indexSocial:'',
     loading:false,
       srclogo:'img/logo.png',
       headerData:[
@@ -155,6 +156,12 @@ new Vue({
     },
     refreshPage(){
       location.reload();
+    },
+    showNameSocial(index){
+      this.indexSocial=index;
+    },
+    hideNameSocial(){
+      this.indexSocial='';
     }
   },
     mounted(){
