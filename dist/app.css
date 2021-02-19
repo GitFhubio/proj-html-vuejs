@@ -38,6 +38,7 @@ header .header-right ul:first-child li .dropdown li:hover {
 }
 header .header-right ul:first-child > li:last-child:after {
   content: "new";
+  border-radius: 3px;
   padding: 5px 7px;
   margin-left: 10px;
   font-size: 12px;
