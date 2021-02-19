@@ -4,6 +4,24 @@
 @import "partials/main";
 @import "partials/footer";
 
+@include animations;
+
+@include data-inviewport;
+
+.fadeIn {
+    animation: fade-in .15s;
+    position: relative;
+}
+
+.fadeOut {
+    animation: fade-out .15s;
+    position: relative;
+}
+
+.fade {
+animation: fade ease 2s;
+}
+
 *{
   margin:0;
   padding:0;
@@ -874,47 +892,4 @@ footer{
   }
 }
 // chiusura wrapper
-}
-.fadeIn {
-    animation: fade-in .15s;
-    position: relative;
-}
-
-.fadeOut {
-    animation: fade-out .15s;
-    position: relative;
-}
-
-.fade {
-animation: fade ease 2s;
-// -webkit-animation: fade ease 2s;
-// -moz-animation: fade ease 2s;
-// -o-animation: fade ease 2s;
-// -ms-animation: fade ease 2s;
-}
-
-@include fade-in;
-@include fade-out;
-@include fade;
-@include fade-left;
-@include fade-right;
-@include fade-top;
-/* inViewport */
-
-[data-inviewport="scale-in"] {
-  transition: 2s;
-  transform: scale(0.1);
-}
-[data-inviewport="scale-in"].is-inViewport {
-  transform: scale(1);
-}
-
-[data-inviewport="fade-left"].is-inViewport {
-  animation: fade-left 0.8s;
-}
-[data-inviewport="fade-right"].is-inViewport {
-  animation: fade-right 0.8s;
-}
-[data-inviewport="fade-top"].is-inViewport {
-  animation: fade-top 0.8s;
 }

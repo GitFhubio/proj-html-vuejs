@@ -84,7 +84,7 @@
         <!-- fine main top -->
         <!-- inizio main-center -->
         <div class="main-center">
-            <div data-inviewport="fade-left" class="main-center-left">
+            <div data-inviewport="slide-left" class="main-center-left">
               <img src="img/box.jpg" alt="box">
               <div class="main-center-left-play"><i class="fas fa-play"></i></div>
             </div>
@@ -118,7 +118,7 @@
             </div>
             <div class="videos">
               <div class="video" v-for="video in videosData">
-                <div data-inviewport="fade-top" class="photo">
+                <div data-inviewport="slide-top" class="photo">
                   <div class="play"><i class="fas fa-play"></i></div>
                 <img :src="video.photo" alt="thumbnail video">
               </div>
@@ -163,7 +163,7 @@
           </div>
           <div class="articles">
             <div class="article" v-for="article in articles">
-              <div data-inviewport="fade-left" class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
+              <div data-inviewport="slide-left" class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
                 <div class="layover">
 
                 </div>

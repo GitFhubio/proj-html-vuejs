@@ -92,8 +92,8 @@ width: 100px;
 border-radius: 50%;
 background-color: $primary_textcolor;
 }
+@mixin animations{
 
-@mixin fade-out{
 @keyframes fade-out {
     0% {
         right: 0;
@@ -112,8 +112,8 @@ background-color: $primary_textcolor;
         top: 0;
     }
 }
-}
-@mixin fade-in{
+
+
 @keyframes fade-in {
     0% {
         left: 0;
@@ -133,17 +133,12 @@ background-color: $primary_textcolor;
     }
 }
 
-}
-@mixin fade{
 @keyframes fade {
 0% {opacity:0;}
 100% {opacity:1;}
 }
 
-}
-
-@mixin fade-right{
-@keyframes fade-right {
+@keyframes slide-right {
     0% {
         right: -50px;
     }
@@ -152,11 +147,7 @@ background-color: $primary_textcolor;
     }
 }
 
-}
-
-
-@mixin fade-left{
-@keyframes fade-left {
+@keyframes slide-left {
     0% {
         left: -100px;
     }
@@ -166,10 +157,7 @@ background-color: $primary_textcolor;
 
 }
 
-}
-
-@mixin fade-top{
-@keyframes fade-top {
+@keyframes slide-top {
     0% {
         top: 100px;
     }
@@ -179,4 +167,37 @@ background-color: $primary_textcolor;
 
 }
 
+
+@keyframes slide-down {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 0;
+    }
+
+}
+}
+
+
+@mixin data-inviewport {
+[data-inviewport="scale-in"] {
+  transition: 2s;
+  transform: scale(0.1);
+}
+[data-inviewport="scale-in"].is-inViewport {
+  transform: scale(1);
+}
+[data-inviewport="slide-down"].is-inViewport {
+  animation: slide-down 0.8s;
+}
+[data-inviewport="slide-left"].is-inViewport {
+  animation: slide-left 0.8s;
+}
+[data-inviewport="slide-right"].is-inViewport {
+  animation: slide-right 0.8s;
+}
+[data-inviewport="slide-top"].is-inViewport {
+  animation: slide-top 0.8s;
+}
 }
