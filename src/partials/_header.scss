@@ -1,0 +1,68 @@
+// inizio header
+  header {
+    height: 100px;
+    width: 100%;
+    padding:10px;
+    background-color: $colorGrey;
+  @include flex;
+    justify-content: space-between;
+    align-items: center;
+
+  .header-left {
+    img {
+      margin-left: 20px;
+      cursor:pointer;
+    }
+  }
+
+  .header-right {
+ @include flex;
+    ul:first-child {
+      padding-top: 11px;
+      li{ position:relative;
+        .dropdown{
+          width:max-content;
+          background-color: $colorGrey;
+          opacity:0.9;
+          position:absolute;
+          top:40px;
+          color: $primary_textcolor;
+          li{
+            padding:10px 15px;
+            &:hover{
+             background-color: #505050;
+            }
+          }
+        }
+      }
+      >li:last-child:after{
+               content:'new';
+               padding: 5px 7px;
+               margin-left: 10px;
+               font-size: 12px;
+               font-weight: 500;
+               color: $colorGrey;
+               background-color: $colorYellow;
+
+          }
+    }
+    >ul {
+      @include listInline;
+      >li {
+        margin: 20px;
+        a {
+          text-decoration: none;
+          color: $colorSilver;
+          font-weight: 500;
+          &:hover{
+            color: $primary_textcolor;
+          }
+        }
+      }
+    }
+    .blue-button {
+      @include blueBtn;
+      font-size: 14px;
+    }
+  }
+}
