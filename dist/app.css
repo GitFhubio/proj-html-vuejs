@@ -454,10 +454,29 @@ header .header-right .blue-button:hover {
   color: #000000;
   margin: 0;
 }
-.main-center-right .youtube .left {
-  background-color: #CF000F;
+.main-center-right .youtube .subscribe {
+  display: flex;
+  width: 120px;
+  height: 26px;
   color: #fff;
-  padding: 2px;
+}
+.main-center-right .youtube .subscribe > div {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  background-color: #CF000F;
+}
+.main-center-right .youtube .subscribe > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  color: #000000;
+  border: 1px solid #bcbcbc;
+  border-radius: 0 3px 3px 0;
+  font-size: 12px;
 }
 .main-center-right p {
   font-size: 23px;

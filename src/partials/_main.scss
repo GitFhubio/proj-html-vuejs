@@ -120,7 +120,7 @@
       font-weight: 500;
       }
       .youtube {
-        display:flex;
+        @include flex;
         padding: 30px 0;
         img {
           height: 50px;
@@ -131,10 +131,29 @@
           color: $primary_bgcolor;
           margin: 0;
         }
-        .left{
-        background-color: $colorRed;
+        .subscribe{
+          @include flex;
+          width:120px;
+          height:26px;
         color: $primary_textcolor;
-        padding: 2px;
+        >div{
+          @include flex;
+          position:relative;
+          justify-content:center;
+          align-items:center;
+          width:75%;
+        background-color: $colorRed;
+        }
+        >span{
+          @include flex;
+          justify-content:center;
+          align-items:center;
+          width:25%;
+        color: $primary_bgcolor;
+        border:1px solid $colorSilver;
+        border-radius: 0 3px 3px 0;
+        font-size: 12px;
+        }
         }
       }
       p {
