@@ -20,18 +20,18 @@
     <!-- fine loader -->
     <div class="wrapper">
 
-      <header @mouseleave="hideDrop" >
+      <header>
         <div class="header-left">
           <div class="logo" @click="refreshPage">
             <img :src="srclogo" alt="logo">
           </div>
         </div>
-        <div class="header-right">
+        <div class="header-right" @mouseleave="hideDrop">
           <ul>
             <li v-for="(menu,index) in menulist" @mouseenter="showDrop(index)"><a href="">{{menu.voce}}</a>
-              <div @mouseleave="hideDrop" v-if="indexNav === index" class="dropdown">
-                 <p v-for="item in menu.content">{{item}}</p>
-              </div>
+              <ul @mouseleave="hideDrop" v-if="indexNav === index" class="dropdown">
+                 <li v-for="item in menu.content">{{item}}</li>
+              </ul>
             </li>
           </ul>
           <ul>
