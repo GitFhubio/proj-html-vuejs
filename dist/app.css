@@ -982,6 +982,22 @@ footer .footer-bottom ul li:last-child:after {
   content: "";
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 @-webkit-keyframes fade-out {
   0% {
     right: 0;
@@ -1000,7 +1016,6 @@ footer .footer-bottom ul li:last-child:after {
     top: 0;
   }
 }
-
 @keyframes fade-out {
   0% {
     right: 0;
@@ -1135,15 +1150,6 @@ footer .footer-bottom ul li:last-child:after {
     top: 0;
   }
 }
-[data-inviewport=scale-in] {
-  transition: 2s;
-  transform: scale(0.1);
-}
-
-[data-inviewport=scale-in].is-inViewport {
-  transform: scale(1);
-}
-
 [data-inviewport=slide-down].is-inViewport {
   -webkit-animation: slide-down 0.8s;
           animation: slide-down 0.8s;
@@ -1238,35 +1244,15 @@ body {
 }
 .charger i {
   position: absolute;
-  color: #fff;
-  font-size: 144px;
-  z-index: 4;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-animation-name: rotate;
-  animation-name: rotate;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
+  -webkit-animation: rotate 1s infinite;
+          animation: rotate 1s infinite;
+  position: absolute;
+  color: #fff;
+  font-size: 144px;
+  z-index: 4;
 }
 
 .wrapper {

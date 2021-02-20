@@ -4,12 +4,6 @@
   display: flex;
 }
 
-@mixin clearfix {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 @mixin centered{
 position:absolute;
 top:50%;
@@ -17,34 +11,8 @@ left:50%;
 transform: translate(-50% , -50%);
 }
 
-@mixin rotate {
-  -webkit-animation-name: rotate;
-          animation-name: rotate;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-
-@-webkit-keyframes rotate {
- 0% {
-   transform: translate(-50%, -50%) rotate(0);
- }
- 100% {
-   transform: translate(-50%, -50%) rotate(360deg);
- }
-}
-
-@keyframes rotate {
- 0% {
-   transform: translate(-50%, -50%) rotate(0);
- }
- 100% {
-   transform: translate(-50%, -50%) rotate(360deg);
- }
-}
-}
 @mixin listInline {
-  display: flex;
+  @include flex;
   list-style: none;
   align-items: baseline;
 }
@@ -94,6 +62,25 @@ background-color: $primary_textcolor;
 cursor:pointer;
 }
 @mixin animations{
+
+
+  @-webkit-keyframes rotate {
+   0% {
+     transform: translate(-50%, -50%) rotate(0);
+   }
+   100% {
+     transform: translate(-50%, -50%) rotate(360deg);
+   }
+  }
+
+  @keyframes rotate {
+   0% {
+     transform: translate(-50%, -50%) rotate(0);
+   }
+   100% {
+     transform: translate(-50%, -50%) rotate(360deg);
+   }
+  }
 
 @keyframes fade-out {
     0% {
@@ -182,13 +169,7 @@ cursor:pointer;
 
 
 @mixin data-inviewport {
-[data-inviewport="scale-in"] {
-  transition: 2s;
-  transform: scale(0.1);
-}
-[data-inviewport="scale-in"].is-inViewport {
-  transform: scale(1);
-}
+
 [data-inviewport="slide-down"].is-inViewport {
   animation: slide-down 0.8s;
 }

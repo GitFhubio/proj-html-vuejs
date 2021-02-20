@@ -48,13 +48,13 @@ body {
   background-color: $primary_bgcolor;
 
   i {
+    @include centered;
+  animation: rotate 1s infinite;
   position:absolute;
   color:$primary_textcolor;
   font-size: $font_size * 8;
   z-index:4;
 
-@include centered;
-@include rotate;
 }
 }
 
