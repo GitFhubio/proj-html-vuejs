@@ -339,6 +339,7 @@ header .header-right .blue-button:hover {
   padding: 0 90px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .main-top .container .boxImg {
   display: flex;
