@@ -84,6 +84,9 @@ header .header-right > ul > li a {
 header .header-right > ul > li a:hover {
   color: #fff;
 }
+header .header-right > ul > li:first-child a {
+  color: #fff;
+}
 header .header-right .blue-button {
   padding: 15px 30px;
   border-radius: 40px;

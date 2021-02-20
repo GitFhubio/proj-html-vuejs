@@ -63,6 +63,9 @@
             color: $primary_textcolor;
           }
         }
+        &:first-child a {
+        color: $primary_textcolor;  
+        }
       }
     }
     .blue-button {
