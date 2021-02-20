@@ -6,21 +6,21 @@
 @import "partials/sections";
 @import "partials/footer";
 
-@include animations;
+@include animations-keyframes;
 @include data-inviewport;
 
 .fadeIn {
-    animation: fade-in .15s;
-    position: relative;
+  @include fade-in;
+  position: relative;
 }
 
 .fadeOut {
-    animation: fade-out .15s;
-    position: relative;
+  @include fade-out;
+  position: relative;
 }
 
 .fade {
-animation: fade ease 2s;
+  @include fade;
 }
 
 *{
@@ -49,13 +49,13 @@ body {
 
   i {
     @include centered;
-  animation: rotate 1s infinite;
-  position:absolute;
-  color:$primary_textcolor;
-  font-size: $font_size * 8;
-  z-index:4;
+    @include rotate;
+    position:absolute;
+    color:$primary_textcolor;
+    font-size: $font_size * 8;
+    z-index:4;
 
-}
+  }
 }
 
 .wrapper{

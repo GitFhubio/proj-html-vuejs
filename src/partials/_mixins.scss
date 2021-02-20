@@ -4,11 +4,17 @@
   display: flex;
 }
 
+@mixin clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 @mixin centered{
-position:absolute;
-top:50%;
-left:50%;
-transform: translate(-50% , -50%);
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50% , -50%);
 }
 
 @mixin listInline {
@@ -55,147 +61,327 @@ transform: translate(-50% , -50%);
 }
 
 @mixin playCircle {
-height: 100px;
-width: 100px;
-border-radius: 50%;
-background-color: $primary_textcolor;
-cursor:pointer;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: $primary_textcolor;
+  cursor:pointer;
 }
-@mixin animations{
 
+// mixin animazioni (singole) e animations-keyframes (accorpati)
+@mixin rotate {
+  -moz-animation-name:rotate;
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+}
+@mixin fade-in {
+  -moz-animation-name: fade-in;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  -moz-animation-duration: .15s;
+  -webkit-animation-duration: .15s;
+  animation-duration: .15s;
+}
+@mixin fade-out {
+  -moz-animation-name: fade-out;
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
+  -moz-animation-duration: .15s;
+  -webkit-animation-duration: .15s;
+  animation-duration: .15s;
+}
+
+@mixin slide-left {
+  -moz-animation-name: slide-left;
+  -webkit-animation-name: slide-left;
+  animation-name: slide-left;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -moz-animation-duration: .8s;
+}
+
+@mixin slide-right {
+  -moz-animation-name: slide-right;
+  -webkit-animation-name: slide-right;
+  animation-name: slide-right;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -moz-animation-duration: .8s;
+}
+
+@mixin slide-top {
+  -webkit-animation-name: slide-top;
+  animation-name: slide-top;
+  -moz-animation-name: slide-top;
+  -moz-animation-duration: .8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+}
+@mixin slide-down {
+  -moz-animation-name: slide-down;
+  -webkit-animation-name: slide-down;
+  animation-name: slide-down;
+  -moz-animation-duration: .8s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+}
+
+@mixin slide-top-delay {
+  @include slide-top;
+  -moz-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+
+@mixin slide-down-delay {
+  @include slide-down;
+  -moz-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+@mixin slide-left-delay {
+  @include slide-left;
+  -moz-animation-delay:0.45s;
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+@mixin slide-right-delay {
+  @include slide-right;
+  -moz-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.45s;
+}
+
+@mixin fade{
+  -moz-animation-name: fade;
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -moz-animation-duration: .15s;
+  -webkit-animation-duration: .15s;
+  animation-duration: .15s;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@mixin animations-keyframes{
 
   @-webkit-keyframes rotate {
-   0% {
-     transform: translate(-50%, -50%) rotate(0);
-   }
-   100% {
-     transform: translate(-50%, -50%) rotate(360deg);
-   }
+    0% {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
 
   @keyframes rotate {
-   0% {
-     transform: translate(-50%, -50%) rotate(0);
-   }
-   100% {
-     transform: translate(-50%, -50%) rotate(360deg);
-   }
+    0% {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
 
-@keyframes fade-out {
+  @keyframes fade-out {
     0% {
-        right: 0;
-        top: 0;
+      right: 0;
+      top: 0;
     }
     50% {
-        right: 50px;
-        top: 0;
+      right: 50px;
+      top: 0;
     }
     51% {
-        right: -50px;
-        top: 0;
+      right: -50px;
+      top: 0;
     }
     100% {
-        right: 0;
-        top: 0;
+      right: 0;
+      top: 0;
     }
-}
+  }
 
-
-@keyframes fade-in {
+  @-webkit-keyframes fade-out {
     0% {
-        left: 0;
-        top: 0;
+      right: 0;
+      top: 0;
     }
     50% {
-        left: 50px;
-        top: 0;
+      right: 50px;
+      top: 0;
     }
     51% {
-        left: -50px;
-        top: 0;
+      right: -50px;
+      top: 0;
     }
     100% {
-        left: 0;
-        top: 0;
+      right: 0;
+      top: 0;
     }
-}
+  }
 
-@keyframes fade {
-0% {opacity:0;}
-100% {opacity:1;}
-}
 
-@keyframes slide-right {
+  @keyframes fade-in {
     0% {
-        right: -50px;
+      left: 0;
+      top: 0;
+    }
+    50% {
+      left: 50px;
+      top: 0;
+    }
+    51% {
+      left: -50px;
+      top: 0;
     }
     100% {
-        right: 0px;
+      left: 0;
+      top: 0;
     }
-}
+  }
 
-@keyframes slide-left {
+  @-webkit-keyframes fade-in {
     0% {
-        left: -100px;
+      left: 0;
+      top: 0;
+    }
+    50% {
+      left: 50px;
+      top: 0;
+    }
+    51% {
+      left: -50px;
+      top: 0;
     }
     100% {
-        left: 0;
+      left: 0;
+      top: 0;
     }
+  }
+  @keyframes fade {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
-}
+  @-webkit-keyframes fade {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
-@keyframes slide-top {
+  @keyframes slide-right {
     0% {
-        top: 100px;
+      right: -50px;
     }
     100% {
-        top: 0;
+      right: 0px;
     }
+  }
 
-}
-
-
-@keyframes slide-down {
+  @-webkit-keyframes  slide-right {
     0% {
-        top: -100px;
+      right: -50px;
     }
     100% {
-        top: 0;
+      right: 0px;
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      left: -100px;
+    }
+    100% {
+      left: 0;
     }
 
-}
+  }
+
+  @-webkit-keyframes slide-left {
+    0% {
+      left: -100px;
+    }
+    100% {
+      left: 0;
+    }
+
+  }
+  @keyframes slide-top {
+    0% {
+      top: 100px;
+    }
+    100% {
+      top: 0;
+    }
+
+  }
+
+  @-webkit-keyframes  slide-top {
+    0% {
+      top: 100px;
+    }
+    100% {
+      top: 0;
+    }
+
+  }
+
+  @keyframes slide-down {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: 0;
+    }
+
+  }
+
+  @-webkit-keyframes slide-down {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: 0;
+    }
+
+  }
 }
 
+// mixin per creazione classi che intercettano elemento in viewport,
+// dandogli animazione
 
 @mixin data-inviewport {
 
-[data-inviewport="slide-down"].is-inViewport {
-  animation: slide-down 0.8s;
-}
-[data-inviewport="slide-left"].is-inViewport {
-  animation: slide-left 0.8s;
-}
-[data-inviewport="slide-right"].is-inViewport {
-  animation: slide-right 0.8s;
-}
-[data-inviewport="slide-top"].is-inViewport {
-  animation: slide-top 0.8s;
-}
-[data-inviewport="slide-top-delay"].is-inViewport {
-  animation: slide-top 0.8s;
-    animation-delay: 0.45s;
-}
-[data-inviewport="slide-down-delay"].is-inViewport {
-  animation: slide-down 0.8s;
-    animation-delay: 0.45s;
-}
-[data-inviewport="slide-right-delay"].is-inViewport {
-  animation: slide-right 0.8s;
-    animation-delay: 0.45s;
-}
-[data-inviewport="slide-left-delay"].is-inViewport {
-  animation: slide-left 0.8s;
-    animation-delay: 0.45s;
-}
+  [data-inviewport="slide-down"].is-inViewport {
+    @include slide-down;
+  }
+  [data-inviewport="slide-left"].is-inViewport {
+    @include slide-left;
+  }
+  [data-inviewport="slide-right"].is-inViewport {
+    @include slide-right;
+  }
+  [data-inviewport="slide-top"].is-inViewport {
+    @include slide-top;
+  }
+  [data-inviewport="slide-top-delay"].is-inViewport {
+    @include slide-top-delay;
+  }
+  [data-inviewport="slide-down-delay"].is-inViewport {
+    @include slide-down-delay;
+  }
+  [data-inviewport="slide-right-delay"].is-inViewport {
+    @include slide-right-delay;
+  }
+  [data-inviewport="slide-left-delay"].is-inViewport {
+    @include slide-left-delay;
+  }
 }
