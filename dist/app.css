@@ -1164,6 +1164,20 @@ footer .footer-bottom ul li:last-child:after {
           animation: slide-top 0.8s;
 }
 
+[data-inviewport=slide-top-delay].is-inViewport {
+  -webkit-animation: slide-top 0.8s;
+          animation: slide-top 0.8s;
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
+[data-inviewport=slide-down-delay].is-inViewport {
+  -webkit-animation: slide-down 0.8s;
+          animation: slide-down 0.8s;
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
 .fadeIn {
   -webkit-animation: fade-in 0.15s;
           animation: fade-in 0.15s;

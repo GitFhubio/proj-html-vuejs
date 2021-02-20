@@ -201,4 +201,12 @@ cursor:pointer;
 [data-inviewport="slide-top"].is-inViewport {
   animation: slide-top 0.8s;
 }
+[data-inviewport="slide-top-delay"].is-inViewport {
+  animation: slide-top 0.8s;
+    animation-delay: 0.45s;
+}
+[data-inviewport="slide-down-delay"].is-inViewport {
+  animation: slide-down 0.8s;
+    animation-delay: 0.45s;
+}
 }
