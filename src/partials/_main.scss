@@ -264,8 +264,9 @@
         cursor: pointer;
         .video {
           @include flex;
+          align-items:center;
           flex-direction: column;
-          width: 380px;
+          width: 33.33%;
           .photo {
             position:relative;
             .play{
@@ -286,8 +287,8 @@
               }
             }
             img {
-              height: 230px;
-              width: 360px;
+              height: auto;
+              width: 400px;
               margin-top: 25px;
               border-radius: 4px 4px 40px 4px;
             }

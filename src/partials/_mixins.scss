@@ -4,11 +4,11 @@
   display: flex;
 }
 
-// @mixin clearfix {
-//   content: '';
-//   display: table;
-//   clear: both;
-// }
+@mixin clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 @mixin centered{
   position:absolute;
@@ -73,8 +73,8 @@
   -moz-animation-name:rotate;
   -webkit-animation-name: rotate;
   animation-name: rotate;
-  -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
@@ -102,24 +102,24 @@
   -moz-animation-name: slide-left;
   -webkit-animation-name: slide-left;
   animation-name: slide-left;
+  -moz-animation-duration: .8s;
   -webkit-animation-duration: .8s;
   animation-duration: .8s;
-  -moz-animation-duration: .8s;
 }
 
 @mixin slide-right {
   -moz-animation-name: slide-right;
   -webkit-animation-name: slide-right;
   animation-name: slide-right;
+  -moz-animation-duration: .8s;
   -webkit-animation-duration: .8s;
   animation-duration: .8s;
-  -moz-animation-duration: .8s;
 }
 
 @mixin slide-top {
+  -moz-animation-name: slide-top;
   -webkit-animation-name: slide-top;
   animation-name: slide-top;
-  -moz-animation-name: slide-top;
   -moz-animation-duration: .8s;
   -webkit-animation-duration: .8s;
   animation-duration: .8s;
@@ -155,7 +155,7 @@
 @mixin slide-right-delay {
   @include slide-right;
   -moz-animation-delay: 0.45s;
-  -webkit-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
 }
 
@@ -360,6 +360,26 @@
 
 @mixin data-inviewport {
 
+  [data-inviewport=scale-in] {
+    transition: 0.8s;
+    transform: scale(0.5);
+  }
+
+  [data-inviewport=scale-in].is-inViewport {
+    transform: scale(1);
+  }
+
+  [data-inviewport=scale-in-delay] {
+    transition: 0.8s;
+    transition-delay:0.45s;
+    transform: scale(0.5);
+  }
+
+  [data-inviewport=scale-in-delay].is-inViewport {
+    transform: scale(1);
+  }
+
+
   [data-inviewport="slide-down"].is-inViewport {
     @include slide-down;
   }
@@ -372,16 +392,17 @@
   [data-inviewport="slide-top"].is-inViewport {
     @include slide-top;
   }
-  [data-inviewport="slide-top-delay"].is-inViewport {
-    @include slide-top-delay;
-  }
+
   [data-inviewport="slide-down-delay"].is-inViewport {
     @include slide-down-delay;
-  }
-  [data-inviewport="slide-right-delay"].is-inViewport {
-    @include slide-right-delay;
   }
   [data-inviewport="slide-left-delay"].is-inViewport {
     @include slide-left-delay;
   }
 }
+  [data-inviewport="slide-right-delay"].is-inViewport {
+    @include slide-right-delay;
+  }
+  [data-inviewport="slide-top-delay"].is-inViewport {
+    @include slide-top-delay;
+  }
