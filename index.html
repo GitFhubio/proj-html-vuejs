@@ -199,7 +199,8 @@
           </div>
           <div class="offers">
             <div class="container">
-              <div :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'" class="offer" v-for="offer in offers">
+              <!-- :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'" -->
+              <div  class="offer" v-for="offer in offers">
                 <img :src="offer.logo" alt="logo offerta">
                 <img src="img/wave.svg" alt="wave">
                 <p>{{offer.description}}</p>
