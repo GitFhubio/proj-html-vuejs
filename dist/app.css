@@ -603,6 +603,7 @@ header .header-right .blue-button:hover {
 }
 .main .main-bottom .container .videos {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
@@ -743,6 +744,7 @@ header .header-right .blue-button:hover {
 }
 .latest-articles .container .articles {
   display: flex;
+  position: relative;
   cursor: pointer;
 }
 .latest-articles .container .articles .article {

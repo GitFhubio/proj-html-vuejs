@@ -125,9 +125,9 @@
               <p>Featured playlists</p>
               <p>View all videos <i class="fas fa-angle-right"></i></p>
             </div>
-            <div class="videos">
+            <div data-inviewport="slide-top" class="videos">
               <div class="video" v-for="video in videosData">
-                <div data-inviewport="slide-top" class="photo">
+                <div class="photo">
                   <div class="play"><i class="fas fa-play"></i></div>
                 <img :src="video.photo" alt="thumbnail video">
               </div>
@@ -170,9 +170,9 @@
             <p>Latest articles</p>
             <p>Read all articles <i class="fas fa-angle-right"></i></p>
           </div>
-          <div class="articles">
+          <div data-inviewport="slide-left" class="articles">
             <div class="article" v-for="article in articles">
-              <div data-inviewport="slide-left" class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
+              <div class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
                 <div class="layover">
                 </div>
               <!-- <img :src="article.photo" alt="foto articolo"> -->
