@@ -54,7 +54,7 @@ new Vue({
       {
         photo: 'img/video7-2x.jpg',
         title: 'Lift, firm & perk up',
-        description:'feel young again',
+        description:'Feel young again',
       },
       {
         photo: 'img/video9-2x.jpg',
