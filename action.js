@@ -5,7 +5,7 @@ new Vue({
     TopButtonVisible:false,
     indexSocial:'',
     indexNav:'',
-    loading:false,
+    loading:true,
       srclogo:'img/logo.png',
       menulist:[
         { voce: 'Home'},
@@ -214,7 +214,7 @@ scrollFunction() {
   created: function(){
           setTimeout(() => {
             this.loading = false;
-          }, 1500)
+          }, 450)
         },
 
 

@@ -40,7 +40,8 @@ body {
   font-size: $font_size;
 }
 .charger{
-  position:absolute;
+  position:fixed;
+  top:0;
   z-index:3;
   width:$full_width;
   height:$full_height;
