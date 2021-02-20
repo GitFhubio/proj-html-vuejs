@@ -37,7 +37,7 @@
             </li>
           </ul>
           <ul>
-            <li class="blue-button">Schedule a workout</li>
+            <li @mouseenter="hideDrop" class="blue-button">Schedule a workout</li>
             <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
             <li><a href=""><i class="fas fa-search"></i></a></li>
           </ul>
@@ -197,8 +197,8 @@
               <a class="blue-button" href="#">Buy Avada Today <i class="fas fa-angle-right"></i></a>
           </div>
           <div class="offers">
-            <div class="container">
-              <div :data-inviewport=" delay==false ? 'scale-in' : 'scale-in-delay'" class="offer" v-for="offer in offers">
+            <div :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'" class="container">
+              <div class="offer" v-for="offer in offers">
                 <img :src="offer.logo" alt="logo offerta">
                 <img src="img/wave.svg" alt="wave">
                 <p>{{offer.description}}</p>

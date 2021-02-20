@@ -833,6 +833,7 @@ header .header-right .blue-button:hover {
 }
 .offers .container {
   display: flex;
+  position: relative;
   padding-top: 90px;
   padding-bottom: 90px;
 }
