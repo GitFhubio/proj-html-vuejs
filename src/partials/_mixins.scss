@@ -209,4 +209,12 @@ cursor:pointer;
   animation: slide-down 0.8s;
     animation-delay: 0.45s;
 }
+[data-inviewport="slide-right-delay"].is-inViewport {
+  animation: slide-right 0.8s;
+    animation-delay: 0.45s;
+}
+[data-inviewport="slide-left-delay"].is-inViewport {
+  animation: slide-left 0.8s;
+    animation-delay: 0.45s;
+}
 }

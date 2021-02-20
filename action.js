@@ -186,7 +186,7 @@ methods:{
     hideDrop(){
       this.indexNav='';
     },
-    // funzione che se sei nella parte bassa esce il bottone che ti manda su cliccandoci sopra grazie alla funzione moveToTop:
+    // funzione che se sei a data distanza dall'alto esce il bottone che ti manda su cliccandoci sopra grazie alla funzione moveToTop:
     // questa funzione la monto perché è di base legata al window scroll
 
     scrollFunction() {

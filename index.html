@@ -86,10 +86,10 @@
         <!-- fine main top -->
         <!-- inizio main-center -->
         <div class="main-center">
-            <div data-inviewport="slide-left" class="main-center-left">
+            <div :data-inviewport=" delay==false ? 'slide-left' : 'slide-left-delay'" class="main-center-left">
               <div class="main-center-left-play"><i class="fas fa-play"></i></div>
             </div>
-            <div data-inviewport="slide-right" class="main-center-right">
+            <div :data-inviewport=" delay==false ? 'slide-right' : 'slide-right-delay'" class="main-center-right">
               <p>Tune up your workouts</p>
               <h2>The best health & fitness advice online</h2>
               <div class="youtube">
@@ -125,7 +125,7 @@
               <p>Featured playlists</p>
               <p>View all videos <i class="fas fa-angle-right"></i></p>
             </div>
-            <div data-inviewport="slide-top" class="videos">
+            <div :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'" class="videos">
               <div class="video" v-for="video in videosData">
                 <div class="photo">
                   <div class="play"><i class="fas fa-play"></i></div>
@@ -170,7 +170,7 @@
             <p>Latest articles</p>
             <p>Read all articles <i class="fas fa-angle-right"></i></p>
           </div>
-          <div data-inviewport="slide-left" class="articles">
+          <div :data-inviewport=" delay==false ? 'slide-left' : 'slide-left-delay'" class="articles">
             <div class="article" v-for="article in articles">
               <div class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
                 <div class="layover">
@@ -197,7 +197,7 @@
           </div>
           <div class="offers">
             <div class="container">
-              <div data-inviewport="slide-top" class="offer" v-for="offer in offers">
+              <div :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'" class="offer" v-for="offer in offers">
                 <img :src="offer.logo" alt="logo offerta">
                 <img src="img/wave.svg" alt="wave">
                 <p>{{offer.description}}</p>
@@ -206,7 +206,7 @@
             </div>
           </div>
           <div class="final-jumbotron">
-            <div data-inviewport="slide-top">
+            <div :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'">
               <div class="play"><i class="fas fa-play"></i></div>
                 <h1>Crossfit workout of the day</h1>
                 <h2>November 15th, 2019</h2>
