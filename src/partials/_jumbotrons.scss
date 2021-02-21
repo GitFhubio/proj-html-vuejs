@@ -135,17 +135,20 @@
 }
 
 .third-jumbotron {
+  >div{
   @include flex;
+  width:100%;
+  height:100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;}
   height: 730px;
   padding: 0 300px;
   background-image: linear-gradient(180deg, rgba(0,2,17,0.16) 0%,$primary_bgcolor 100%),url("../img/banner2-2x.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   h1 {
     font-size: 60px;
     font-weight: 500;
