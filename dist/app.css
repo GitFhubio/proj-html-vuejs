@@ -315,7 +315,7 @@ header .header-right .blue-button:hover {
 }
 
 .final-jumbotron {
-  height: 600px;
+  height: 680px;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -911,6 +911,7 @@ footer .container .footer-top {
 }
 footer .container .footer-top div {
   display: flex;
+  padding: 0 30px;
   width: 33.3333333333%;
   flex-direction: column;
   align-items: center;
@@ -950,7 +951,6 @@ footer .container .footer-top .brand-section .socialNetworks li .dropdown {
   top: -13px;
 }
 footer .container .footer-top .recent-posts {
-  width: 370px;
   color: #fff;
 }
 footer .container .footer-top .recent-posts h6 {
@@ -970,7 +970,6 @@ footer .container .footer-top .recent-posts ul li:hover {
   color: #ec5a57;
 }
 footer .container .footer-top .contact-informations {
-  width: 370px;
   color: #fff;
 }
 footer .container .footer-top .contact-informations h6 {

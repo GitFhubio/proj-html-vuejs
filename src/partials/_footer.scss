@@ -11,6 +11,7 @@ footer{
       justify-content: center;
       div{
         @include flex;
+        padding:0 $padding_unit * 1.5;
         width:$full_width / 3;
         flex-direction:  column;
         align-items:center;
@@ -50,7 +51,6 @@ footer{
       }
 
       .recent-posts {
-        width: 370px;
         color: $primary_textcolor;
         h6 {
           font-size: $font_size / 0.75;
@@ -69,7 +69,6 @@ footer{
         }
       }
       .contact-informations {
-        width: 370px;
         color: $primary_textcolor;
         h6 {
           font-size: $font_size / 0.75;
