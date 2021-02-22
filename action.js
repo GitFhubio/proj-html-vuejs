@@ -223,9 +223,10 @@ methods:{
     window.onscroll = function() {
       self.scrollFunction();
       // quanto segue è perché mettendo header relative anziche fixed in partenza aprendo il dropdown e scorrendo i suoi li,se col mouse vado su jumbotron il dropdown si chiude
-      if (document.documentElement.scrollTop > 20) {
-    document.getElementsByTagName('header')[0].style.position='relative';
-      }
+    //   if (document.documentElement.scrollTop > 20) {
+    // document.getElementsByTagName('header')[0].style.position='relative';
+    //   }
+    // questa patch è stata evitata mettendo semplicemente z-index:2 al dropdown in position absolute....
     };
 
     //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options

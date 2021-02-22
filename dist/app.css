@@ -17,9 +17,6 @@
 }
 
 header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
   height: 100px;
   width: 100%;
   padding: 10px;
@@ -47,6 +44,7 @@ header .header-right ul:first-child li .dropdown {
   width: max-content;
   background-color: #060606;
   opacity: 0.9;
+  z-index: 2;
   position: absolute;
   top: 40px;
   color: #fff;

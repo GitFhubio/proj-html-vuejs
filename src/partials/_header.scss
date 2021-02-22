@@ -1,8 +1,8 @@
 // inizio header
   header {
-    position:fixed;
-    top:0;
-    z-index: 1;
+    // position:fixed;
+    // top:0;
+    // z-index: 1;
     height: 100px;
     width: $full_width;
     padding:$padding_unit / 2;
@@ -27,6 +27,7 @@
           width:max-content;
           background-color: $colorCodGray;
           opacity:0.9;
+          z-index:2;
           position:absolute;
           top:40px;
           color: $primary_textcolor;
