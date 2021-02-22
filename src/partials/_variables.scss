@@ -6,9 +6,11 @@ $colorSilver: #bcbcbc;
 $colorYellow: #FFF941;
 $colorBlue:#4154FE;
 $colorOrange: #ec5a57;
+
 // al cliente non va più bene colorRed
 // che deve cambiare in green
-$colorRed: #bc0428;
+
+// $colorRed: #bc0428;
 $colorGreen: #41c457;
 // font
 
@@ -23,9 +25,9 @@ $full_height:100%;
 $margin_unit: 15px;
 $padding_unit: 20px;
 
-// img divider
+// img divider (non mi serve più perché ho fatto il mixin icon-divider che è funzione del colore,mentre icon_separator variava di colore col filter,soluzione che scollegava da color palette)
 
-$icon_separator: '../img/wave.svg' ;
+// $icon_separator: '../img/wave.svg' ;
 
 // img
 

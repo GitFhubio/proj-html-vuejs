@@ -27,11 +27,12 @@
     // img {
     //   width: 85px;
     // }
+
     .decoration{
       width:85px;
       height:85px;
-      background-image: url($icon_separator);
-      background-size:cover;
+      @include icon-divider($colorYellow);
+      background-size: cover;
     }
     p {
       font-size: $font_size / 0.72;
@@ -103,13 +104,11 @@
     font-weight: $font_weight_title / 0.6;
     color: $primary_textcolor;
   }
-  // img {
-  //   width: 85px;
-  // }
   .decoration{
     width:85px;
     height:85px;
-    background-image: url($icon_separator);
+    // background-image: url($icon_separator);
+    @include icon-divider($colorYellow);
     background-size:cover;
   }
   p {
@@ -161,7 +160,7 @@
     .decoration{
       width:85px;
       height:85px;
-      background-image: url($icon_separator);
+      @include icon-divider($colorYellow);
       background-size:cover;
     }
     p {

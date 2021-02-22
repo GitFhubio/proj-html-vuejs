@@ -171,9 +171,10 @@
         margin:0 auto;
         width:85px;
         height:85px;
-        background-image: url($icon_separator);
+        // background-image: url($icon_separator);
+        @include icon-divider($colorBlue);
         background-size:cover;
-        filter: invert(80%);
+        // filter: invert(80%);
       }
       // :first-child
       img{

@@ -29,10 +29,11 @@
         //   filter: grayscale(100%);
         // }
         .decoration{
+          @include icon-divider($primary_textcolor);
           width:50px;
           height:50px;
-          filter: grayscale(100%);
-          background-image: url($icon_separator);
+          // filter: grayscale(100%);
+          // background-image: url($icon_separator);
           background-size:cover;
         }
         h5 {
@@ -65,9 +66,9 @@
       //   width: 85px;
       // }
       .decoration{
+        @include icon-divider($colorYellow);
         width:85px;
         height:85px;
-        background-image: url($icon_separator);
         background-size:cover;
       }
       ul {
