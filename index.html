@@ -49,7 +49,7 @@
       </header>
       <!-- inizio jumbotron -->
       <div class="jumbotron">
-        <div :data-inviewport=" delay==false ? 'slide-down' : 'slide-down-delay'" class="container">
+        <div :data-aos-delay="delay==false ? '0' : '450'" data-aos-mirror="true" data-aos="fade-down" class="container">
           <div class="jumbotron-left">
             <h3>Certified fitness professional</h3>
             <h1>Take control of your health</h1>
@@ -73,7 +73,7 @@
         <!-- inizio main top -->
         <div class="main-top">
           <!-- :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'"  -->
-          <div :data-aos-delay="delay==false ? '0' : '300'" data-aos-mirror="true" data-aos="fade-up" class="container">
+          <div :data-aos-delay="delay==false ? '0' : '450'" data-aos-mirror="true" data-aos="fade-up" class="container">
             <div v-for="service in services" :style="{'background-image' : 'linear-gradient(180deg, rgba(0,0,0,0) 11%, rgba(0,0,0,0.7) 100%), url(\'' + service.photo + '\')'}" class="boxImg">
                 <!-- <img src="img/wave.svg" alt="wave"> -->
                 <div class="decoration">
