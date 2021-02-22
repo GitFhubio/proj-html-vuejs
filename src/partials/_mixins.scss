@@ -60,10 +60,10 @@
 
 @mixin redBtn {
   @include Btn;
-  background-color: $colorRed;
+  background-color: $colorGreen;
   font-weight: $font_weight_title / 0.6;
   &:hover {
-    background-color: rgba(207, 0, 15, 0.5)
+    background-color: rgba(65,196,87,0.7);
   }
 }
 

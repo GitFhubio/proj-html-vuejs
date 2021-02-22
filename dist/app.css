@@ -523,7 +523,7 @@ header .header-right .blue-button:hover {
   justify-content: center;
   position: relative;
   width: 75%;
-  background-color: #bc0428;
+  background-color: #ec5a57;
 }
 .main-center-right .youtube .subscribe > div:hover {
   background-color: #a51b0b;
@@ -601,7 +601,7 @@ header .header-right .blue-button:hover {
   border-radius: 40px;
   color: #fff;
   cursor: pointer;
-  background-color: #bc0428;
+  background-color: #41c457;
   font-weight: 500;
   width: 320px;
   font-size: 18px;
@@ -609,7 +609,7 @@ header .header-right .blue-button:hover {
   margin-top: 40.05px;
 }
 .main-center-right .red-button:hover {
-  background-color: rgba(207, 0, 15, 0.5);
+  background-color: rgba(65, 196, 87, 0.7);
 }
 .main-center-right .red-button i {
   padding-left: 10px;
