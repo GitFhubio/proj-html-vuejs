@@ -55,7 +55,7 @@ header .header-right ul:first-child li .dropdown li {
   padding: 10px 15px;
 }
 header .header-right ul:first-child li .dropdown li:hover {
-  background-color: #505050;
+  background-color: #78787a;
 }
 header .header-right ul:first-child > li:last-child:after {
   content: "new";
@@ -92,27 +92,24 @@ header .header-right .blue-button {
   border-radius: 40px;
   color: #fff;
   cursor: pointer;
-  background-color: #4154FF;
+  background-color: #4154FE;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 14.04px;
 }
 header .header-right .blue-button:hover {
   background-color: #ec5a57;
 }
 
 .jumbotron {
-  margin-top: 100px;
   height: 630px;
   width: 100%;
-  background-color: #060606;
   background-image: linear-gradient(90deg, #060606 45%, rgba(6, 6, 6, 0) 75%), url("../img/slider82x-scaled.jpg");
-  background-position: top right;
   background-size: cover;
 }
 .jumbotron .container {
-  position: relative;
   padding: 0 90px;
   display: flex;
+  position: relative;
 }
 .jumbotron-left {
   width: 70%;
@@ -128,8 +125,11 @@ header .header-right .blue-button:hover {
   font-weight: 500;
   color: #fff;
 }
-.jumbotron-left img {
+.jumbotron-left .decoration {
   width: 85px;
+  height: 85px;
+  background-image: url("../img/wave.svg");
+  background-size: cover;
 }
 .jumbotron-left p {
   font-size: 25px;
@@ -153,7 +153,7 @@ header .header-right .blue-button:hover {
   border-radius: 40px;
   color: #fff;
   cursor: pointer;
-  background-color: #4154FF;
+  background-color: #4154FE;
   font-weight: 500;
   padding: 18px 26px;
   font-size: 18px;
@@ -172,17 +172,17 @@ header .header-right .blue-button:hover {
 .jumbotron-left ul .trasparent-button:hover {
   background-color: #fff;
   border: 2px solid #fff;
-  color: #000000;
+  color: #060606;
 }
 .jumbotron-left ul i {
   vertical-align: middle;
 }
 .jumbotron-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30%;
   padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .jumbotron-right-play {
   height: 100px;
@@ -191,11 +191,11 @@ header .header-right .blue-button:hover {
   background-color: #fff;
   cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .jumbotron-right-play i {
-  color: #4154FF;
+  color: #4154FE;
 }
 .jumbotron-right-play:hover i {
   color: #ec5a57;
@@ -206,7 +206,6 @@ header .header-right .blue-button:hover {
   width: 100%;
   background-color: #060606;
   background-image: linear-gradient(90deg, #060606 45%, rgba(6, 6, 6, 0) 75%), url("../img/banner1-2x.jpg");
-  background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -225,12 +224,15 @@ header .header-right .blue-button:hover {
   color: #ec5a57;
 }
 .jumbotron-content h2 {
-  font-size: 58px;
+  font-size: 57.96px;
   font-weight: 500;
   color: #fff;
 }
-.jumbotron-content img {
+.jumbotron-content .decoration {
   width: 85px;
+  height: 85px;
+  background-image: url("../img/wave.svg");
+  background-size: cover;
 }
 .jumbotron-content p {
   font-size: 25px;
@@ -251,11 +253,11 @@ header .header-right .blue-button:hover {
   border-radius: 40px;
   color: #fff;
   cursor: pointer;
-  background-color: #4154FF;
+  background-color: #4154FE;
   font-weight: 500;
   text-align: center;
   width: 230px;
-  margin-top: 40px;
+  margin-top: 40.05px;
   font-size: 18px;
 }
 .jumbotron-content ul .blue-button:hover {
@@ -270,18 +272,17 @@ header .header-right .blue-button:hover {
 .third-jumbotron {
   height: 730px;
   padding: 0 300px;
-  background-image: linear-gradient(180deg, rgba(0, 2, 17, 0.16) 0%, #000000 100%), url("../img/banner2-2x.jpg");
-  background-position: top;
+  background-image: linear-gradient(180deg, rgba(0, 2, 17, 0.16) 0%, #060606 100%), url("../img/banner2-2x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .third-jumbotron > div {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 .third-jumbotron h1 {
@@ -289,11 +290,14 @@ header .header-right .blue-button:hover {
   font-weight: 500;
   color: #fff;
 }
-.third-jumbotron img {
+.third-jumbotron .decoration {
   width: 85px;
+  height: 85px;
+  background-image: url("../img/wave.svg");
+  background-size: cover;
 }
 .third-jumbotron p {
-  font-size: 23px;
+  font-size: 23.04px;
   font-weight: 400;
   color: #fff;
 }
@@ -302,11 +306,10 @@ header .header-right .blue-button:hover {
   border-radius: 40px;
   color: #fff;
   cursor: pointer;
-  background-color: #4154FF;
+  background-color: #4154FE;
   font-weight: 500;
-  font-size: 14px;
   width: 230px;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 18px;
 }
 .third-jumbotron .blue-button:hover {
@@ -314,20 +317,22 @@ header .header-right .blue-button:hover {
 }
 
 .final-jumbotron {
-  height: 530px;
+  height: 600px;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(151deg, rgba(6, 25, 231, 0.4) 35%, rgba(206, 1, 18, 0.4) 100%), url("../img/banner14-2x.jpg");
+  background-image: linear-gradient(151deg, rgba(6, 25, 231, 0.8) 35%, rgba(206, 1, 18, 0.8) 100%), url("../img/banner14-2x.jpg");
+  background-color: rgba(255, 255, 255, 0);
+  background-blend-mode: multiply;
 }
 .final-jumbotron > div {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 100%;
   height: 100%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .final-jumbotron > div .play {
   height: 100px;
@@ -336,22 +341,26 @@ header .header-right .blue-button:hover {
   background-color: #fff;
   cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .final-jumbotron > div .play i {
-  color: #4154FF;
+  color: #4154FE;
 }
 .final-jumbotron > div .play:hover i {
   color: #ec5a57;
 }
 .final-jumbotron > div h1 {
-  padding: 20px 0;
+  font-size: 57.6px;
+  font-weight: 500;
 }
 .final-jumbotron > div h1, .final-jumbotron > div a {
+  padding: 20px 0;
   color: #fff;
 }
 .final-jumbotron > div h2 {
+  font-size: 45px;
+  font-weight: 500;
   color: #FFF941;
 }
 
@@ -377,18 +386,21 @@ header .header-right .blue-button:hover {
   padding-left: 30px;
   flex-direction: column;
   justify-content: flex-end;
-  transform: translateY(-15%);
+  transform: translateY(-25%);
   transition: 0.4s;
 }
 .main-top .container .boxImg:hover {
-  transform: scale(1.1) translateY(-15%);
+  transform: scale(1.1) translateY(-25%);
 }
-.main-top .container .boxImg img {
+.main-top .container .boxImg .decoration {
   width: 50px;
+  height: 50px;
   filter: grayscale(100%);
+  background-image: url("../img/wave.svg");
+  background-size: cover;
 }
 .main-top .container .boxImg h5 {
-  font-size: 35px;
+  font-size: 35.1px;
   font-weight: 500;
   color: #fff;
 }
@@ -400,7 +412,7 @@ header .header-right .blue-button:hover {
 }
 .main-top-description {
   display: flex;
-  margin: 0 190px;
+  margin: 0 190.05px;
   flex-direction: column;
   align-items: center;
 }
@@ -412,8 +424,11 @@ header .header-right .blue-button:hover {
   text-align: center;
   line-height: 1.4;
 }
-.main-top-description img {
+.main-top-description .decoration {
   width: 85px;
+  height: 85px;
+  background-image: url("../img/wave.svg");
+  background-size: cover;
 }
 .main-top-description ul {
   display: flex;
@@ -422,7 +437,7 @@ header .header-right .blue-button:hover {
 }
 .main-top-description ul li {
   padding: 0 10px;
-  font-size: 22px;
+  font-size: 21.9512195122px;
   color: #fff;
 }
 .main-top-description ul li:first-child img {
@@ -459,11 +474,11 @@ header .header-right .blue-button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .main-center-left-play i {
-  color: #4154FF;
+  color: #4154FE;
 }
 .main-center-left-play:hover i {
   color: #ec5a57;
@@ -475,10 +490,10 @@ header .header-right .blue-button:hover {
   padding: 100px 50px 100px 100px;
 }
 .main-center-right p:first-child {
-  font-size: 28px;
-  color: #4154FF;
+  font-size: 28.08px;
+  color: #4154FE;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .main-center-right h2 {
   font-size: 60px;
@@ -493,8 +508,8 @@ header .header-right .blue-button:hover {
   padding-right: 10px;
 }
 .main-center-right .youtube p {
-  font-size: 13px;
-  color: #000000;
+  font-size: 12.96px;
+  color: #060606;
   margin: 0;
 }
 .main-center-right .youtube .subscribe {
@@ -506,11 +521,11 @@ header .header-right .blue-button:hover {
 }
 .main-center-right .youtube .subscribe > div {
   display: flex;
-  position: relative;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
   width: 75%;
-  background-color: #CF000F;
+  background-color: #bc0428;
 }
 .main-center-right .youtube .subscribe > div:hover {
   background-color: #a51b0b;
@@ -542,7 +557,7 @@ header .header-right .blue-button:hover {
   border-width: 0 11px 9px;
   top: -9px;
   left: 18%;
-  margin-left: -11px;
+  margin-left: -10.95px;
 }
 .main-center-right .youtube .subscribe > div .dropdown-content:before {
   content: "";
@@ -567,20 +582,20 @@ header .header-right .blue-button:hover {
 }
 .main-center-right .youtube .subscribe > div .dropdown-content span:nth-child(2) {
   width: 80%;
-  color: #000000;
+  color: #060606;
 }
 .main-center-right .youtube .subscribe > span:nth-child(2) {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 25%;
-  color: #000000;
+  color: #060606;
   border: 1px solid #bcbcbc;
   border-radius: 0 3px 3px 0;
   font-size: 12px;
 }
 .main-center-right p {
-  font-size: 23px;
+  font-size: 23.04px;
   color: #bcbcbc;
 }
 .main-center-right .red-button {
@@ -588,12 +603,12 @@ header .header-right .blue-button:hover {
   border-radius: 40px;
   color: #fff;
   cursor: pointer;
-  background-color: #CF000F;
+  background-color: #bc0428;
   font-weight: 500;
   width: 320px;
   font-size: 18px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 40.05px;
 }
 .main-center-right .red-button:hover {
   background-color: rgba(207, 0, 15, 0.5);
@@ -624,7 +639,7 @@ header .header-right .blue-button:hover {
   vertical-align: middle;
 }
 .main .main-bottom .container div p:last-child:hover {
-  color: #4154FF;
+  color: #4154FE;
 }
 .main .main-bottom .container .videos {
   display: flex;
@@ -637,7 +652,7 @@ header .header-right .blue-button:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 33.33%;
+  width: 33.3333333333%;
 }
 .main .main-bottom .container .videos .video .photo {
   position: relative;
@@ -648,16 +663,16 @@ header .header-right .blue-button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   background-color: #fff;
-  justify-content: center;
-  align-items: center;
 }
 .main .main-bottom .container .videos .video .photo .play i {
   font-size: 9px;
-  color: #4154FF;
+  color: #4154FE;
 }
 .main .main-bottom .container .videos .video .photo .play:hover i {
   color: #ec5a57;
@@ -665,19 +680,19 @@ header .header-right .blue-button:hover {
 .main .main-bottom .container .videos .video .photo img {
   height: auto;
   width: 400px;
-  margin-top: 25px;
+  margin-top: 25.05px;
   border-radius: 4px 4px 40px 4px;
 }
 .main .main-bottom .container .videos .video h5 {
-  font-size: 28px;
+  font-size: 28.08px;
   font-weight: 500;
-  padding: 25px 0 10px;
+  padding: 30px 0 10px;
   text-align: center;
 }
 .main .main-bottom .container .videos .video p {
   font-size: 20px;
   text-align: center;
-  color: #4154FF;
+  color: #4154FE;
 }
 
 .products {
@@ -694,7 +709,7 @@ header .header-right .blue-button:hover {
 .products .product {
   height: 540px;
   width: 360px;
-  border: 4px solid #4154FF;
+  border: 4px solid #4154FE;
   border-radius: 8px;
   text-align: center;
   color: #fff;
@@ -730,9 +745,9 @@ header .header-right .blue-button:hover {
 }
 .products .product p:last-child {
   display: flex;
-  cursor: pointer;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   font-weight: 500;
   color: #fff;
 }
@@ -763,7 +778,7 @@ header .header-right .blue-button:hover {
   cursor: pointer;
 }
 .latest-articles .container div p:last-child:hover {
-  color: #4154FF;
+  color: #4154FE;
 }
 .latest-articles .container div p:last-child i {
   padding: 4px;
@@ -791,7 +806,7 @@ header .header-right .blue-button:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: radial-gradient(farthest-corner at 200% 90%, darkblue, transparent);
+  background: radial-gradient(farthest-corner at 200% 90%, #4321aa, transparent);
   opacity: 0;
   transition: 1.7s;
 }
@@ -800,7 +815,7 @@ header .header-right .blue-button:hover {
 }
 .latest-articles .container .articles .article h5 {
   padding: 20px 10px 10px;
-  font-size: 28px;
+  font-size: 28.08px;
   font-weight: 500;
 }
 .latest-articles .container .articles .article ul {
@@ -812,7 +827,7 @@ header .header-right .blue-button:hover {
 .latest-articles .container .articles .article ul li {
   padding: 0 10px;
   cursor: text;
-  color: #000000;
+  color: #060606;
   opacity: 0.7;
   font-size: 18px;
 }
@@ -824,7 +839,7 @@ header .header-right .blue-button:hover {
   opacity: 1;
 }
 .latest-articles .container .articles .article ul li span:hover {
-  color: #4154FF;
+  color: #4154FE;
 }
 .latest-articles .container .articles .article ul li:not(:last-child) {
   position: relative;
@@ -849,19 +864,21 @@ header .header-right .blue-button:hover {
   text-align: center;
   width: 25%;
 }
-.offers .container .offer img {
+.offers .container .offer .decoration {
   margin: 0 auto;
-  display: block;
   width: 85px;
+  height: 85px;
+  background-image: url("../img/wave.svg");
+  background-size: cover;
   filter: invert(80%);
 }
-.offers .container .offer img:first-child {
+.offers .container .offer img {
   width: 150px;
   height: auto;
-  filter: none;
 }
 .offers .container .offer p {
-  color: gray;
+  color: #060606;
+  opacity: 0.9;
   font-size: 18px;
   padding: 0 35px;
   line-height: 1.5;
@@ -873,10 +890,10 @@ header .header-right .blue-button:hover {
   font-weight: 500;
   padding-top: 45px;
   font-size: 18px;
-  color: #000000;
+  color: #060606;
 }
 .offers .container .offer p:last-child a {
-  color: #000000;
+  color: #060606;
 }
 .offers .container .offer p:last-child i {
   padding: 8px;
@@ -890,15 +907,15 @@ footer .container {
   color: white;
 }
 footer .container .footer-top {
+  display: flex;
   width: 100%;
   height: 500px;
   padding-top: 100px;
-  display: flex;
   justify-content: center;
 }
 footer .container .footer-top div {
   display: flex;
-  width: 33%;
+  width: 33.3333333333%;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -932,7 +949,7 @@ footer .container .footer-top .brand-section .socialNetworks li .dropdown {
   padding: 4px;
   border-radius: 2px;
   background-color: #505050;
-  font-size: 11px;
+  font-size: 10.9756097561px;
   position: absolute;
   top: -13px;
 }
@@ -1261,8 +1278,8 @@ footer .footer-bottom ul li:last-child:after {
 .fade {
   -webkit-animation-name: fade;
   animation-name: fade;
-  -webkit-animation-duration: 0.15s;
-  animation-duration: 0.15s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
 }
@@ -1292,7 +1309,7 @@ body {
   z-index: 3;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #060606;
 }
 .charger i {
   position: absolute;
@@ -1324,23 +1341,23 @@ body {
 }
 .popup div {
   display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   box-shadow: 2px 2px 10px #bcbcbc;
   left: 0;
   right: 0;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 65px;
-  margin-bottom: 10px;
   height: 65px;
+  margin-bottom: 10px;
   cursor: pointer;
   background-color: #fff;
   border-radius: 5px;
 }
 .popup div p {
   padding-top: 4px;
-  font-size: 13px;
+  font-size: 12.96px;
 }
 
 #scrollTopButton {
@@ -1354,5 +1371,5 @@ body {
   right: 100px;
 }
 #scrollTopButton:hover {
-  background-color: #4154FF;
+  background-color: #4154FE;
 }

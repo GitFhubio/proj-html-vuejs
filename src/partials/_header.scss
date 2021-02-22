@@ -4,16 +4,16 @@
     top:0;
     z-index: 1;
     height: 100px;
-    width: 100%;
-    padding:10px;
-    background-color: $colorGrey;
+    width: $full_width;
+    padding:$padding_unit / 2;
+    background-color: $colorCodGray;
   @include flex;
     justify-content: space-between;
     align-items: center;
 
   .header-left {
     img {
-      margin-left: 20px;
+      margin-left: $margin_unit / 0.75;
       cursor:pointer;
     }
   }
@@ -21,19 +21,19 @@
   .header-right {
  @include flex;
     ul:first-child {
-      padding-top: 11px;
+      padding-top: $padding_unit * 0.55;
       li{ position:relative;
         .dropdown{
           width:max-content;
-          background-color: $colorGrey;
+          background-color: $colorCodGray;
           opacity:0.9;
           position:absolute;
           top:40px;
           color: $primary_textcolor;
           li{
-            padding:10px 15px;
+            padding:$padding_unit / 2 $padding_unit * 0.75;
             &:hover{
-             background-color: #505050;
+             background-color: #78787a;
             }
           }
         }
@@ -41,11 +41,11 @@
       >li:last-child:after{
                content:'new';
                border-radius: 3px;
-               padding: 5px 7px;
-               margin-left: 10px;
-               font-size: 12px;
-               font-weight: 500;
-               color: $colorGrey;
+               padding: $padding_unit / 4 $padding_unit * 0.35;
+               margin-left: $margin_unit / 1.5;
+               font-size: $font_size / 1.5;
+               font-weight: $font_weight_title / 0.6;
+               color: $colorCodGray;
                background-color: $colorYellow;
 
           }
@@ -54,23 +54,23 @@
       @include listInline;
       >li {
         cursor:pointer;
-        margin: 20px;
+        margin: $margin_unit / 0.75;
         a {
           text-decoration: none;
           color: $colorSilver;
-          font-weight: 500;
+          font-weight: $font_weight_title / 0.6;
           &:hover{
             color: $primary_textcolor;
           }
         }
         &:first-child a {
-        color: $primary_textcolor;  
+        color: $primary_textcolor;
         }
       }
     }
     .blue-button {
       @include blueBtn;
-      font-size: 14px;
+      font-size: $font_size * 0.78;
     }
   }
 }

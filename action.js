@@ -221,7 +221,6 @@ methods:{
     }, 450)
 
     window.onscroll = function() {self.scrollFunction()};
-
     //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
 
     // funzione per avere lo scroll solo quando elemento è nella viewport

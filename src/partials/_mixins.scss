@@ -4,11 +4,23 @@
   display: flex;
 }
 
-@mixin clearfix {
-  content: '';
-  display: table;
-  clear: both;
+@mixin flexCenter {
+  @include flex;
+  align-items:center;
+  justify-content: center;
 }
+
+@mixin listInline {
+  @include flex;
+  list-style: none;
+  align-items: baseline;
+}
+
+// @mixin clearfix {
+//   content: '';
+//   display: table;
+//   clear: both;
+// }
 
 @mixin centered{
   position:absolute;
@@ -17,17 +29,12 @@
   transform: translate(-50% , -50%);
 }
 
-@mixin listInline {
-  @include flex;
-  list-style: none;
-  align-items: baseline;
-}
 @mixin widthContainer {
-  padding: 0 90px;
+  padding: 0 $padding_unit * 4.5;
 }
 
 @mixin Btn {
-  padding:15px 30px;
+  padding:$padding_unit * 0.75 $padding_unit * 1.5;
   border-radius: 40px;
   color: $primary_textcolor;
   cursor: pointer;
@@ -35,7 +42,7 @@
 @mixin blueBtn {
   @include Btn;
   background-color: $colorBlue;
-  font-weight: 500;
+  font-weight: $font_weight_title / 0.6;
   &:hover {
     background-color: $colorOrange;
   }
@@ -43,18 +50,18 @@
 @mixin trasparentBtn {
   @include Btn;
   border: 2px solid $colorSilver;
-  font-weight: 500;
+  font-weight: $font_weight_title / 0.6;
   &:hover {
     background-color: $primary_textcolor;
     border: 2px solid $primary_textcolor;
-    color: $primary_bgcolor;
+    color: $colorCodGray;
   }
 }
 
 @mixin redBtn {
   @include Btn;
   background-color: $colorRed;
-  font-weight: 500;
+  font-weight: $font_weight_title / 0.6;
   &:hover {
     background-color: rgba(207, 0, 15, 0.5)
   }
@@ -63,7 +70,7 @@
 @mixin playCircle {
   height: 100px;
   width: 100px;
-  border-radius: 50%;
+  border-radius: $full_width / 2;
   background-color: $primary_textcolor;
   cursor:pointer;
 }
@@ -163,9 +170,9 @@
   -moz-animation-name: fade;
   -webkit-animation-name: fade;
   animation-name: fade;
-  -moz-animation-duration: .15s;
-  -webkit-animation-duration: .15s;
-  animation-duration: .15s;
+  -moz-animation-duration: .7s;
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
   -moz-animation-timing-function: ease;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
@@ -400,9 +407,9 @@
     @include slide-left-delay;
   }
 }
-  [data-inviewport="slide-right-delay"].is-inViewport {
-    @include slide-right-delay;
-  }
-  [data-inviewport="slide-top-delay"].is-inViewport {
-    @include slide-top-delay;
-  }
+[data-inviewport="slide-right-delay"].is-inViewport {
+  @include slide-right-delay;
+}
+[data-inviewport="slide-top-delay"].is-inViewport {
+  @include slide-top-delay;
+}

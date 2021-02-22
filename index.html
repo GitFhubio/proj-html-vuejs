@@ -53,7 +53,9 @@
           <div class="jumbotron-left">
             <h3>Certified fitness professional</h3>
             <h1>Take control of your health</h1>
-            <img src="img/wave.svg" alt="wave">
+            <!-- <img src="img/wave.svg" alt="wave"> -->
+            <div class="decoration">
+            </div>
             <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
             <ul>
               <li class="blue-button"><i class="fab fa-youtube"></i>  Visit my YouTube channel</li>
@@ -73,14 +75,18 @@
           <!-- :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'"  -->
           <div :data-aos-delay="delay==false ? '0' : '300'" data-aos-mirror="true" data-aos="fade-up" class="container">
             <div v-for="service in services" :style="{'background-image' : 'linear-gradient(180deg, rgba(0,0,0,0) 11%, rgba(0,0,0,0.7) 100%), url(\'' + service.photo + '\')'}" class="boxImg">
-                <img src="img/wave.svg" alt="wave">
+                <!-- <img src="img/wave.svg" alt="wave"> -->
+                <div class="decoration">
+                </div>
                 <h5>{{service.title}}</h5>
                 <span>{{service.description}}</span>
               </div>
           </div>
           <div class="main-top-description">
             <h2>“How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser.”</h2>
-            <img src="img/wave.svg" alt="wave">
+            <!-- <img src="img/wave.svg" alt="wave"> -->
+            <div class="decoration">
+            </div>
             <ul>
               <li><img src="img/avatar.jpg" alt="Brad Johnson"></li>
               <li>Brad Johnson</li>
@@ -149,7 +155,9 @@
           <div :data-aos-delay="delay==false ? '0' : '300'" data-aos-mirror="true" data-aos="fade-right" class="jumbotron-content">
             <h3>Join our mailing list today</h3>
             <h2>Insider offers & flash sales in your inbox every week.</h2>
-            <img src="img/wave.svg" alt="wave">
+            <!-- <img src="img/wave.svg" alt="wave"> -->
+            <div class="decoration">
+            </div>
             <ul>
               <li><input type="email" name="mail" placeholder="Insert your email...*"></li>
               <li class="blue-button">Subscribe</li>
@@ -195,7 +203,9 @@
       <div class="third-jumbotron">
         <div :data-aos-delay="delay==false ? '0' : '300'" data-aos-mirror="true" data-aos="fade-up">
             <h1>“I’ve failed over and over again in my life. And that is why I succeed.”</h1>
-            <img src="img/wave.svg" alt="wave">
+            <div class="decoration">
+            </div>
+            <!-- <img src="img/wave.svg" alt="wave"> -->
             <p>
             Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis
           </p>
@@ -207,7 +217,9 @@
             <div :data-aos-delay="delay==false ? '0' : '300'" data-aos-mirror="true" data-aos="fade-up" class="container">
               <div class="offer" v-for="offer in offers">
                 <img :src="offer.logo" alt="logo offerta">
-                <img src="img/wave.svg" alt="wave">
+                <!-- <img src="img/wave.svg" alt="wave"> -->
+                <div class="decoration">
+                </div>
                 <p>{{offer.description}}</p>
                 <p><a href="">{{offer.link}}</a><i class="fas fa-angle-right"></i></p>
               </div>

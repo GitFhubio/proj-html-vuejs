@@ -1,18 +1,18 @@
 // colors
-$primary_bgcolor: #000000;
+
 $primary_textcolor:#fff;
-$colorGrey: #060606;
+$colorCodGray: #060606;
 $colorSilver: #bcbcbc;
 $colorYellow: #FFF941;
-$colorBlue:#4154FF;
+$colorBlue:#4154FE;
 $colorOrange: #ec5a57;
-$colorRed: #CF000F;
+$colorRed: #bc0428;
 
 // font
+
 $font_family:'Barlow Semi Condensed', sans-serif;
 $font_size: 18px;
 $font_weight_title: 300;
-// $line_height: 1.5;
 
 // dimensions
 
@@ -20,3 +20,16 @@ $full_width: 100%;
 $full_height:100%;
 $margin_unit: 15px;
 $padding_unit: 20px;
+
+// img divider
+
+$icon_separator: '../img/wave.svg' ;
+
+// img
+
+$jumbotron1_image: "../img/slider82x-scaled.jpg" ;
+$jumbotron2_image:"../img/banner1-2x.jpg";
+$jumbotron3_image:"../img/banner2-2x.jpg";
+$jumbotron4_image:'../img/banner14-2x.jpg';
+
+$main_center_image:'../img/box.jpg';

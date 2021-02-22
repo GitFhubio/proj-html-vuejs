@@ -16,52 +16,65 @@
         background-position: center;
         background-size: cover;
         height: 400px;
-        padding-left: 30px;
+        padding-left: $padding_unit * 1.5;
         flex-direction: column;
         justify-content: flex-end;
-        transform: translateY(-15%);
+        transform: translateY(-25%);
         transition: 0.4s;
         &:hover {
-          transform: scale(1.1) translateY(-15%);
+          transform: scale(1.1) translateY(-25%);
         }
-        img {
-          width: 50px;
+        // img {
+        //   width: 50px;
+        //   filter: grayscale(100%);
+        // }
+        .decoration{
+          width:50px;
+          height:50px;
           filter: grayscale(100%);
+          background-image: url($icon_separator);
+          background-size:cover;
         }
         h5 {
-          font-size: 35px;
-          font-weight: 500;
+          font-size: $font_size * 1.95;
+          font-weight: $font_weight_title / 0.6;
           color: $primary_textcolor;
         }
         span {
-          font-size: 25px;
-          font-weight: 500;
+          font-size: $font_size / 0.72;
+          font-weight: $font_weight_title / 0.6;
           color: $colorYellow;
-          margin-bottom: 45px;
+          margin-bottom: $margin_unit * 3;
         }
       }
     }
     &-description {
       @include flex;
-      margin: 0 190px;
+      margin: 0 $margin_unit * 12.67;
       flex-direction: column;
       align-items: center;
       h2 {
-        padding-top: 60px;
-        font-size: 48px;
-        font-weight: 500;
+        padding-top: $padding_unit * 3;
+        font-size:$font_size / 0.375;
+        font-weight: $font_weight_title / 0.6;
         color: $primary_textcolor;
         text-align: center;
         line-height: 1.4;
       }
-      img {
-        width: 85px;
+      // img {
+      //   width: 85px;
+      // }
+      .decoration{
+        width:85px;
+        height:85px;
+        background-image: url($icon_separator);
+        background-size:cover;
       }
       ul {
         @include listInline;
         li {
-          padding:0 10px;
-          font-size: 22px;
+          padding:0 $padding_unit / 2;
+          font-size: $font_size / 0.82;
           color: $primary_textcolor;
           &:first-child {
             img {
@@ -82,7 +95,7 @@
     height: 700px;
     background-color: $primary_textcolor;
     &-left {
-      background-image:url('../img/box.jpg');
+      background-image:url($main_center_image);
       background-position: center;
       background-size: cover;
       height: 770px;
@@ -94,9 +107,7 @@
       &-play {
         @include playCircle;
         @include centered;
-        @include flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         i {
           color:$colorBlue;
         }
@@ -107,29 +118,29 @@
     }
     &-right {
       position:relative;
-      height: 100%;
-      width: 50%;
-      padding: 100px 50px 100px  100px;
+      height: $full_height;
+      width: $full_width / 2;
+      padding: $padding_unit * 5 $padding_unit * 2.5 $padding_unit * 5 $padding_unit * 5 ;
       p:first-child {
-        font-size: 28px;
+        font-size: $font_size * 1.56;
         color: $colorBlue;
-        font-weight: 500;
-        margin-bottom: 40px;
+        font-weight: $font_weight_title / 0.6;
+        margin-bottom: $margin_unit * 2;
       }
       h2 {
-        font-size: 60px;
-        font-weight: 500;
+        font-size: $font_size / 0.3;
+        font-weight: $font_weight_title / 0.6;
       }
       .youtube {
         @include flex;
-        padding: 30px 0;
+        padding: $padding_unit * 1.5 0;
         img {
           height: 50px;
-          padding-right: 10px;
+          padding-right: $padding_unit / 2;
         }
         p {
-          font-size: 13px;
-          color: $primary_bgcolor;
+          font-size: $font_size * 0.72;
+          color: $colorCodGray;
           margin: 0;
         }
         .subscribe{
@@ -139,14 +150,12 @@
           height:26px;
           color: $primary_textcolor;
           >div{
-            @include flex;
+            @include flexCenter;
             position:relative;
-            justify-content:center;
-            align-items:center;
-            width:75%;
+            width:$full_width * 0.75;
             background-color: $colorRed;
             &:hover{
-            background-color: #a51b0b;
+              background-color: #a51b0b;
             }
             .dropdown:hover .dropdown-content{
               @include flex;
@@ -174,7 +183,7 @@
                 border-width: 0 11px 9px;
                 top: -9px;
                 left: 18%;
-                margin-left: -11px;
+                margin-left: - $margin_unit * 0.73;
               }
               &:before {
                 content: '';
@@ -186,47 +195,48 @@
                 border-width: 0 12px 10px;
                 top: -10.5px;
                 left: 18%;
-                margin-left: -12px;
+                margin-left: - $margin_unit * 0.8;
                 display: block;
               }
               span:first-child{
-                font-size: 25px;
+                font-size: $font_size / 0.72;
                 background-color:#4321aa;
                 line-height: 40px;
-                margin-left:5px;
+                // width:16%;
+                // margin:2% 2%;
+                // height:auto;
+                margin-left:$margin_unit / 3;
                 width:40px;
                 height:40px;
               }
               span:nth-child(2){
-                width:80%;
-                color:$primary_bgcolor;
+                width:$full_width * 0.8;
+                color:$colorCodGray;
               }
             }
           }
           >span:nth-child(2){
-            @include flex;
-            justify-content:center;
-            align-items:center;
-            width:25%;
-            color: $primary_bgcolor;
+            @include flexCenter;
+            width: $full_width / 4;
+            color: $colorCodGray;
             border:1px solid $colorSilver;
             border-radius: 0 3px 3px 0;
-            font-size: 12px;
+            font-size: $font_size / 1.5;
           }
         }
       }
       p {
-        font-size: 23px;
+        font-size: $font_size * 1.28;
         color: $colorSilver;
       }
       .red-button {
         @include redBtn;
         width: 320px;
-        font-size: 18px;
+        font-size: $font_size;
         text-align: center;
-        margin-top: 40px;
+        margin-top: $margin_unit * 2.67;
         i {
-          padding-left: 10px;
+          padding-left: $padding_unit / 2;
         }
       }
 
@@ -237,16 +247,16 @@
     height: 600px;
     .container {
       @include widthContainer;
-      padding-top: 90px;
-      padding-bottom: 90px;
+      padding-top: $padding_unit * 4.5;
+      padding-bottom: $padding_unit * 4.5;
       div {
         @include flex;
         justify-content: space-between;
-        font-size: 27px;
-        font-weight: 500;
+        font-size: $font_size * 1.5;
+          font-weight: $font_weight_title / 0.6;
         p:last-child {
-          padding-right: 15px;
-          font-size: 18px;
+          padding-right: $padding_unit * 0.75;
+          font-size: $font_size;
           cursor: pointer;
           i {
             vertical-align: middle;
@@ -266,18 +276,16 @@
           @include flex;
           align-items:center;
           flex-direction: column;
-          width: 33.33%;
+          width: $full_width / 3;
           .photo {
             position:relative;
             .play{
               @include centered;
-              @include flex;
+              @include flexCenter;
               height: 50px;
               width: 50px;
-              border-radius: 50%;
+              border-radius: $full_width / 2;
               background-color: $primary_textcolor;
-              justify-content: center;
-              align-items: center;
               i {
                 font-size:$font_size /2;
                 color:$colorBlue;
@@ -289,18 +297,18 @@
             img {
               height: auto;
               width: 400px;
-              margin-top: 25px;
+              margin-top: $margin_unit * 1.67;
               border-radius: 4px 4px 40px 4px;
             }
           }
           h5 {
-            font-size: 28px;
-            font-weight: 500;
-            padding: 25px 0 10px;
+            font-size: $font_size * 1.56;
+            font-weight: $font_weight_title / 0.6;
+            padding: $padding_unit * 1.5 0 $padding_unit / 2;
             text-align: center;
           }
           p {
-            font-size: 20px;
+            font-size: $font_size / 0.9;
             text-align: center;
             color: $colorBlue;
           }
