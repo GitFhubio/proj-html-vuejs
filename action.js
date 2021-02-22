@@ -220,7 +220,14 @@ methods:{
       self.loaderDelay();
     }, 450)
 
-    window.onscroll = function() {self.scrollFunction()};
+    window.onscroll = function() {
+      self.scrollFunction();
+      // quanto segue è perché mettendo header relative anziche fixed in partenza aprendo il dropdown e scorrendo i suoi li,se col mouse vado su jumbotron il dropdown si chiude
+      if (document.documentElement.scrollTop > 20) {
+    document.getElementsByTagName('header')[0].style.position='relative';
+      }
+    };
+
     //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
 
     // funzione per avere lo scroll solo quando elemento è nella viewport
