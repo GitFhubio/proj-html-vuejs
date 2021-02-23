@@ -108,7 +108,7 @@
             transition: 1.7s;
           }
           &:hover .layover {
-            opacity:1;
+            opacity:$full_opacity;
           }
         }
         h5 {
@@ -126,11 +126,11 @@
             }
             cursor:text;
             color: $primary_bgcolor;
-            opacity:0.7;
+            opacity:$full_opacity * 0.7;
             font-size: $font_size;
             span{
               cursor:pointer;
-              opacity:1;
+              opacity:$full_opacity;
               &:hover{
                 color:$btn_base_color;
               }
@@ -184,15 +184,13 @@
       }
       p {
         color: $primary_bgcolor;
-        opacity:0.9;
+        opacity:$full_opacity * 0.9;
         font-size: $font_size;
         padding: 0 $padding_unit * 1.75;
-        line-height: 1.5;
+        line-height: $line_height * 0.938;
       }
       p:last-child{
-        @include flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         font-weight: $font_weight_title / 0.6;
         padding-top: $padding_unit * 2.25;
         font-size: $font_size;

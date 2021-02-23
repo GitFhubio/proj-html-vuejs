@@ -79,7 +79,7 @@ body {
     height:65px;
     margin-bottom: $margin_unit / 1.5;
     cursor:pointer;
-    background-color: #fff;
+    background-color: $primary_textcolor;
     border-radius:5px;
     p{padding-top: $padding_unit / 5;
       font-size: $font_size * 0.72;

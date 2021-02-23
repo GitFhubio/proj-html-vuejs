@@ -84,6 +84,7 @@
   background-color: $primary_bgcolor;
   background-image: linear-gradient(90deg, $primary_bgcolor 45%,rgba(6,6,6,0) 75%),  url($jumbotron2_image);
   background-size: cover;
+  background-position: top center;
   background-repeat: no-repeat;
   .container{
     @include widthContainer;

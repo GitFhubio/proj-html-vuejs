@@ -284,12 +284,12 @@
   }
   @keyframes fade {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:$full_opacity;}
   }
 
   @-webkit-keyframes fade {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:$full_opacity;}
   }
 
   // @keyframes slide-left {

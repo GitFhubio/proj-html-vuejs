@@ -26,7 +26,7 @@
         .dropdown{
           width:max-content;
           background-color: $primary_bgcolor;
-          opacity:0.9;
+          opacity:$full_opacity * 0.9;
           z-index:2;
           position:absolute;
           top:40px;

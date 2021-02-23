@@ -186,6 +186,7 @@ header .header-right .nav-button:hover {
   background-color: #060606;
   background-image: linear-gradient(90deg, #060606 45%, rgba(6, 6, 6, 0) 75%), url("../img/banner1-2x.jpg");
   background-size: cover;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 .second-jumbotron .container {
@@ -487,8 +488,10 @@ header .header-right .nav-button:hover {
 }
 .main-center-right .youtube p {
   font-size: 12.96px;
-  color: #060606;
-  margin: 0;
+  margin-bottom: 5px;
+}
+.main-center-right .youtube p a {
+  color: rgba(6, 6, 6, 0.7);
 }
 .main-center-right .youtube .subscribe {
   cursor: pointer;
@@ -574,7 +577,7 @@ header .header-right .nav-button:hover {
 }
 .main-center-right p {
   font-size: 23.04px;
-  color: #bcbcbc;
+  color: rgba(6, 6, 6, 0.8);
 }
 .main-center-right .yt-button {
   padding: 15px 30px;
@@ -858,12 +861,12 @@ header .header-right .nav-button:hover {
   opacity: 0.9;
   font-size: 18px;
   padding: 0 35px;
-  line-height: 1.5;
+  line-height: 1.5008;
 }
 .offers .container .offer p:last-child {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-weight: 500;
   padding-top: 45px;
   font-size: 18px;

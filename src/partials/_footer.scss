@@ -24,7 +24,7 @@ footer{
           font-size: $font_size / 0.9;
           text-align: center;
           color: $primary_textcolor;
-          opacity:0.8;
+          opacity:$full_opacity * 0.8;
         }
         .socialNetworks {
           @include listInline;
@@ -81,7 +81,7 @@ footer{
             font-size: $font_size / 0.9;
             &:first-child {
               margin: $margin_unit * 2 0;
-              opacity:0.8;
+              opacity:$full_opacity * 0.8;
             }
           }
         }

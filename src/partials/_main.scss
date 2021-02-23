@@ -60,7 +60,7 @@
         font-weight: $font_weight_title / 0.6;
         color: $primary_textcolor;
         text-align: center;
-        line-height: 1.4;
+        line-height: $line_height * 0.875;
       }
       // img {
       //   width: 85px;
@@ -85,7 +85,7 @@
             }
           }
           &:last-child {
-            opacity: 0.6;
+            opacity: $full_opacity * 0.6;
           }
         }
       }
@@ -142,8 +142,11 @@
         }
         p {
           font-size: $font_size * 0.72;
-          color: $primary_bgcolor;
-          margin: 0;
+          // margin: 0;
+          margin-bottom: 5px;
+          a{
+          color: rgba($primary_bgcolor, $full_opacity * 0.7);
+          }
         }
         .subscribe{
           cursor:pointer;
@@ -229,7 +232,7 @@
       }
       p {
         font-size: $font_size * 1.28;
-        color: $secondary_textcolor;
+        color: rgba($primary_bgcolor, $full_opacity * 0.8);
       }
       .yt-button {
         @include greenBtn;
