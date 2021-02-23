@@ -80,7 +80,7 @@ header .header-right .blue-button:hover {
 }
 
 .jumbotron {
-  height: 630px;
+  height: 600px;
   width: 100%;
   background-image: linear-gradient(90deg, #060606 45%, rgba(6, 6, 6, 0) 75%), url("../img/slider82x-scaled.jpg");
   background-size: cover;
