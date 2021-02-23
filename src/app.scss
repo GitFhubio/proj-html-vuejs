@@ -36,6 +36,8 @@ ul li {
   list-style: none;
 }
 body {
+  // overflow serve perché animazioni left e right di aos generano comparsa scrollar orizzontale
+  overflow-x: hidden;
   font-family:$font_family;
   font-size: $font_size;
 }

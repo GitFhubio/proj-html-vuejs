@@ -1149,6 +1149,7 @@ ul li {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 18px;
 }
