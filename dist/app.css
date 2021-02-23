@@ -1,14 +1,13 @@
 header {
+  padding: 0 90px;
+  display: flex;
   height: 100px;
   width: 100%;
-  padding: 10px;
   background-color: #060606;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header .header-left img {
-  margin-left: 20px;
   cursor: pointer;
 }
 header .header-right {

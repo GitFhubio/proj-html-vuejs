@@ -1,19 +1,19 @@
 // inizio header
   header {
+    @include widthContainer;
+    @include flex;
     // position:fixed;
     // top:0;
     // z-index: 1;
     height: 100px;
     width: $full_width;
-    padding:$padding_unit / 2;
     background-color: $colorCodGray;
-  @include flex;
     justify-content: space-between;
     align-items: center;
 
   .header-left {
     img {
-      margin-left: $margin_unit / 0.75;
+      // margin-left: $margin_unit / 0.75;
       cursor:pointer;
     }
   }
