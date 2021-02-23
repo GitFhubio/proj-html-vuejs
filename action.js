@@ -251,3 +251,10 @@ methods:{
 })
 
 Vue.config.devtools = true;
+
+// commenti finali:
+// 1)sito pensato per desktop,no media query per lg e mobile
+// 2)animazioni on scroll con aos animate, alternativa a intersection observer(che mi dava leggerissimi bug su qualche browser);
+// 3)Vue usato per rendering elementi dom, compresi dropdown di navbar/icone social e 2 bottoni animati fixed a dx;
+// 4)svg dell'icona zig zag servito come back e passato nel mixin col suo codice e parametro di ingresso il colore che cambia la proprietà fill
+// 5)aggiunta loader per nascondere il dom nei primi secondi ancora non perfettamente renderizzato
