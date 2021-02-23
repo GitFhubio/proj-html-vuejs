@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Proj project</title>
+  <title>Avada Fitness Clone</title>
   <meta name="description" content="How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser.">
   <link
   rel="stylesheet"
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="dist/app.css">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
@@ -25,7 +25,6 @@
     </div>
     <!-- fine loader -->
     <div class="wrapper">
-
       <header>
         <div class="header-left">
           <div class="logo" @click="refreshPage">
@@ -36,7 +35,7 @@
           <ul>
             <li v-for="(menu,index) in menulist" @mouseenter="showDrop(index)"><a href="">{{menu.voce}}</a>
               <ul @mouseleave="hideDrop" v-if="indexNav === index" class="dropdown">
-                 <li v-for="item in menu.content">{{item}}</li>
+                <li v-for="item in menu.content">{{item}}</li>
               </ul>
             </li>
           </ul>
@@ -74,12 +73,12 @@
           <!-- :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'"  -->
           <div :data-aos-delay="delay==false ? '0' : '450'" data-aos="fade-up" class="container">
             <div v-for="service in services" :style="{'background-image' : 'linear-gradient(180deg, rgba(0,0,0,0) 11%, rgba(0,0,0,0.7) 100%), url(\'' + service.photo + '\')'}" class="boxImg">
-                <!-- <img src="img/wave.svg" alt="wave"> -->
-                <div class="decoration">
-                </div>
-                <h5>{{service.title}}</h5>
-                <span>{{service.description}}</span>
+              <!-- <img src="img/wave.svg" alt="wave"> -->
+              <div class="decoration">
               </div>
+              <h5>{{service.title}}</h5>
+              <span>{{service.description}}</span>
+            </div>
           </div>
           <div class="main-top-description">
             <h2>“How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser.”</h2>
@@ -96,19 +95,19 @@
         <!-- fine main top -->
         <!-- inizio main-center -->
         <div class="main-center">
-            <div :data-inviewport=" delay==false ? 'slide-left' : 'slide-left-delay'" class="main-center-left">
-              <div class="main-center-left-play"><i class="fas fa-play"></i></div>
-            </div>
-            <div :data-inviewport=" delay==false ? 'slide-right' : 'slide-right-delay'" class="main-center-right">
-              <p>Tune up your workouts</p>
-              <h2>The best health & fitness advice online</h2>
-              <div class="youtube">
-                <img src="img/unnamed.jpg">
-                <div class="youtube-right">
-                  <p><a href="">ThemeFusion</a></p>
-                  <div class="subscribe">
+          <div :data-inviewport=" delay==false ? 'slide-right' : 'slide-right-delay'" class="main-center-left">
+            <div class="main-center-left-play"><i class="fas fa-play"></i></div>
+          </div>
+          <div :data-inviewport=" delay==false ? 'slide-left' : 'slide-left-delay'" class="main-center-right">
+            <p>Tune up your workouts</p>
+            <h2>The best health & fitness advice online</h2>
+            <div class="youtube">
+              <img src="img/unnamed.jpg">
+              <div class="youtube-right">
+                <p><a href="">ThemeFusion</a></p>
+                <div class="subscribe">
                   <div>
-                     <span><i class="fab fa-youtube"></i></span>
+                    <span><i class="fab fa-youtube"></i></span>
                     <div class="dropdown"><span>Youtube</span>
                       <div class="dropdown-content">
                         <span>F</span>
@@ -116,16 +115,16 @@
                       </div>
                     </div>
                   </div>
-                    <span>19K</span>
-                  </div>
+                  <span>19K</span>
                 </div>
               </div>
-              <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
-              <div class="red-button">
-                <span><i class="fab fa-youtube"></i></span>
-                <span>Visit my YouTube channel</span>
-              </div>
             </div>
+            <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
+            <div class="red-button">
+              <span><i class="fab fa-youtube"></i></span>
+              <span>Visit my YouTube channel</span>
+            </div>
+          </div>
         </div>
         <!-- fine main-center -->
         <!-- inizio main-bottom -->
@@ -139,8 +138,8 @@
               <div class="video" v-for="video in videosData">
                 <div class="photo">
                   <div class="play"><i class="fas fa-play"></i></div>
-                <img :src="video.photo" alt="thumbnail video">
-              </div>
+                  <img :src="video.photo" alt="thumbnail video">
+                </div>
                 <h5>{{video.title}}</h5>
                 <p>{{video.description}}</p>
               </div>
@@ -182,13 +181,13 @@
             <p>Latest articles</p>
             <p>Read all articles <i class="fas fa-angle-right"></i></p>
           </div>
-          <div :data-inviewport=" delay==false ? 'slide-left' : 'slide-left-delay'" class="articles">
+          <div :data-inviewport=" delay==false ? 'slide-right' : 'slide-right-delay'" class="articles">
             <div class="article" v-for="article in articles">
               <div class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
                 <div class="layover">
                 </div>
-              <!-- <img :src="article.photo" alt="foto articolo"> -->
-               </div>
+                <!-- <img :src="article.photo" alt="foto articolo"> -->
+              </div>
               <h5>{{article.title}}</h5>
               <ul>
                 <li>By <span>{{article.author}}</span></li>
@@ -201,93 +200,93 @@
       </div>
       <div class="third-jumbotron">
         <div :data-aos-delay="delay==false ? '0' : '300'" data-aos="fade-up">
-            <h1>“I’ve failed over and over again in my life. And that is why I succeed.”</h1>
-            <div class="decoration">
-            </div>
-            <!-- <img src="img/wave.svg" alt="wave"> -->
-            <p>
+          <h1>“I’ve failed over and over again in my life. And that is why I succeed.”</h1>
+          <div class="decoration">
+          </div>
+          <!-- <img src="img/wave.svg" alt="wave"> -->
+          <p>
             Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa in ipsum eros, tristique. Gravida suspendisse etiam in iaculis
           </p>
-              <a class="blue-button" href="#">Buy Avada Today <i class="fas fa-angle-right"></i></a>
+          <a class="blue-button" href="#">Buy Avada Today <i class="fas fa-angle-right"></i></a>
 
+        </div>
+      </div>
+      <div class="offers">
+        <div :data-aos-delay="delay==false ? '0' : '300'" data-aos="fade-up" class="container">
+          <div class="offer" v-for="offer in offers">
+            <img :src="offer.logo" alt="logo offerta">
+            <!-- <img src="img/wave.svg" alt="wave"> -->
+            <div class="decoration">
+            </div>
+            <p>{{offer.description}}</p>
+            <p><a href="">{{offer.link}}</a><i class="fas fa-angle-right"></i></p>
+          </div>
+        </div>
+      </div>
+      <div class="final-jumbotron">
+        <div :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'">
+          <div class="play"><i class="fas fa-play"></i></div>
+          <h1>Crossfit workout of the day</h1>
+          <h2>November 15th, 2019</h2>
+          <a href="#">View all videos →</a>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <div class="brand-section">
+              <img :src="srclogo" alt="Avada logo">
+              <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.</p>
+              <ul class="socialNetworks">
+                <li v-for="(social,index) in socialIcons"><i :class="social.icon" @mouseenter="showNameSocial(index)" @mouseleave="hideNameSocial"></i>
+                  <div v-if="indexSocial === index" class="dropdown fade">
+                    {{social.name}}
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="recent-posts">
+              <h6>Recent posts</h6>
+              <ul>
+                <li v-for="post in posts"><i class="fas fa-angle-right"></i>{{post}}</li>
+              </ul>
+            </div>
+            <div class="contact-informations">
+              <h6>Contact Informations</h6>
+              <ul>
+                <li>{{contacts.address}}</li>
+                <li>Mobile: {{contacts.mobile}}</li>
+                <li>Email: {{contacts.email}}</li>
+              </ul>
             </div>
           </div>
-          <div class="offers">
-            <div :data-aos-delay="delay==false ? '0' : '300'" data-aos="fade-up" class="container">
-              <div class="offer" v-for="offer in offers">
-                <img :src="offer.logo" alt="logo offerta">
-                <!-- <img src="img/wave.svg" alt="wave"> -->
-                <div class="decoration">
-                </div>
-                <p>{{offer.description}}</p>
-                <p><a href="">{{offer.link}}</a><i class="fas fa-angle-right"></i></p>
-              </div>
-            </div>
+          <div class="footer-bottom">
+            <ul>
+              <li v-html="copy" v-for="copy in rights">{{copy}}</li>
+            </ul>
           </div>
-          <div class="final-jumbotron">
-            <div :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'">
-              <div class="play"><i class="fas fa-play"></i></div>
-                <h1>Crossfit workout of the day</h1>
-                <h2>November 15th, 2019</h2>
-                  <a href="#">View all videos →</a>
-              </div>
-              </div>
-              <footer>
-                <div class="container">
-                  <div class="footer-top">
-                    <div class="brand-section">
-                       <img :src="srclogo" alt="Avada logo">
-                       <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.</p>
-                     <ul class="socialNetworks">
-                       <li v-for="(social,index) in socialIcons"><i :class="social.icon" @mouseenter="showNameSocial(index)" @mouseleave="hideNameSocial"></i>
-                        <div v-if="indexSocial === index" class="dropdown fade">
-                         {{social.name}}
-                        </div>
-                       </li>
-                     </ul>
-                    </div>
-                    <div class="recent-posts">
-                     <h6>Recent posts</h6>
-                      <ul>
-                        <li v-for="post in posts"><i class="fas fa-angle-right"></i>{{post}}</li>
-                      </ul>
-                    </div>
-                    <div class="contact-informations">
-                      <h6>Contact Informations</h6>
-                      <ul>
-                         <li>{{contacts.address}}</li>
-                        <li>Mobile: {{contacts.mobile}}</li>
-                        <li>Email: {{contacts.email}}</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="footer-bottom">
-                    <ul>
-                      <li v-html="copy" v-for="copy in rights">{{copy}}</li>
-                    </ul>
-                  </div>
-                </div>
-              </footer>
-              <div class="popup">
-              <div v-for="(popup,ind) in popups" class="Demos" @mouseenter="animationIn(ind)" @mouseleave="animationOut(ind)">
-             <i :class="[popup.icon,popup.fade]"></i>
-              <p>{{popup.name}}</p>
-              </div>
-              <!-- <div class="Buy Now"  @mouseenter="animationIn2" @mouseleave="animationOut2">
-              <i :class="fade2" class="fas fa-shopping-cart"></i>
-              <p>Buy Now</p>
-              </div> -->
-              </div>
-  <!-- chiusura wrapper -->
-  <a id="scrollTopButton" v-if="TopButtonVisible" @click="moveToTop" ><i class="fas fa-angle-up"></i></a>
+        </div>
+      </footer>
+      <div class="popup">
+        <div v-for="(popup,ind) in popups" class="Demos" @mouseenter="animationIn(ind)" @mouseleave="animationOut(ind)">
+          <i :class="[popup.icon,popup.fade]"></i>
+          <p>{{popup.name}}</p>
+        </div>
+        <!-- <div class="Buy Now"  @mouseenter="animationIn2" @mouseleave="animationOut2">
+        <i :class="fade2" class="fas fa-shopping-cart"></i>
+        <p>Buy Now</p>
+      </div> -->
     </div>
-<!-- chiusura root -->
-
+    <!-- chiusura wrapper -->
+    <a id="scrollTopButton" v-if="TopButtonVisible" @click="moveToTop" ><i class="fas fa-angle-up"></i></a>
   </div>
-  <script src="https://unpkg.com/aos@next/dist/aos.js">
-  </script>
-  <script>
-    AOS.init({ // Global settings:
+  <!-- chiusura root -->
+
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+</script>
+<script>
+AOS.init({ // Global settings:
   once: false, // whether animation should happen only once - while scrolling down
   mirror: true,}) // whether elements should animate out while scrolling past them);
   </script>

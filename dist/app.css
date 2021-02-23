@@ -1125,23 +1125,23 @@ footer .footer-bottom ul li:last-child:after {
     opacity: 1;
   }
 }
-@keyframes slide-right {
-  0% {
-    right: -50px;
-  }
-  100% {
-    right: 0px;
-  }
-}
-@-webkit-keyframes slide-right {
-  0% {
-    right: -50px;
-  }
-  100% {
-    right: 0px;
-  }
-}
 @keyframes slide-left {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes slide-right {
   0% {
     left: -100px;
   }
@@ -1149,7 +1149,7 @@ footer .footer-bottom ul li:last-child:after {
     left: 0;
   }
 }
-@-webkit-keyframes slide-left {
+@-webkit-keyframes slide-right {
   0% {
     left: -100px;
   }
