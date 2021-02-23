@@ -44,7 +44,7 @@
         span {
           font-size: $font_size / 0.72;
           font-weight: $font_weight_title / 0.6;
-          color: $colorYellow;
+          color: $details_color;
           margin-bottom: $margin_unit * 3;
         }
       }
@@ -66,7 +66,7 @@
       //   width: 85px;
       // }
       .decoration{
-        @include icon-divider($colorYellow);
+        @include icon-divider($details_color);
         width:85px;
         height:85px;
         background-size:cover;
@@ -111,10 +111,10 @@
         @include centered;
         @include flexCenter;
         i {
-          color:$colorBlue;
+          color:$btn_base_color;
         }
         &:hover i {
-          color: $colorOrange;
+          color: $btn_base_hoverColor;
         }
       }
     }
@@ -125,7 +125,7 @@
       padding: $padding_unit * 5 $padding_unit * 2.5 $padding_unit * 5 $padding_unit * 5 ;
       p:first-child {
         font-size: $font_size * 1.56;
-        color: $colorBlue;
+        color: $btn_base_color;
         font-weight: $font_weight_title / 0.6;
         margin-bottom: $margin_unit * 2;
       }
@@ -142,7 +142,7 @@
         }
         p {
           font-size: $font_size * 0.72;
-          color: $colorCodGray;
+          color: $primary_bgcolor;
           margin: 0;
         }
         .subscribe{
@@ -155,15 +155,15 @@
             @include flexCenter;
             position:relative;
             width:$full_width * 0.75;
-            background-color: $colorGreen;
+            background-color: $subscribe_section_color;
             &:hover{
-           background-color:darken($colorGreen, 20%);
+           background-color:darken($subscribe_section_color, 20%);
             }
             .dropdown:hover .dropdown-content{
               @include flex;
             }
             .dropdown-content{
-              box-shadow:2px $colorSilver;
+              box-shadow:2px $secondary_textcolor;
               text-align: center;
               position:absolute;
               top:32px;
@@ -171,7 +171,7 @@
               display:none;
               align-items:center;
               background-color:$primary_textcolor;
-              border:1px solid $colorSilver;
+              border:1px solid $secondary_textcolor;
               width:270px;
               height:60px;
               &:after {
@@ -181,7 +181,7 @@
                 width: 0;
                 z-index: 1;
                 border-style: solid;
-                border-color: #ffffff transparent;
+                border-color: $primary_textcolor transparent;
                 border-width: 0 11px 9px;
                 top: -9px;
                 left: 18%;
@@ -193,7 +193,7 @@
                 width: 0;
                 z-index: 0;
                 border-style: solid;
-                border-color: $colorSilver transparent;
+                border-color: $secondary_textcolor transparent;
                 border-width: 0 12px 10px;
                 top: -10.5px;
                 left: 18%;
@@ -213,15 +213,15 @@
               }
               span:nth-child(2){
                 width:$full_width * 0.8;
-                color:$colorCodGray;
+                color:$primary_bgcolor;
               }
             }
           }
           >span:nth-child(2){
             @include flexCenter;
             width: $full_width / 4;
-            color: $colorCodGray;
-            border:1px solid $colorSilver;
+            color: $primary_bgcolor;
+            border:1px solid $secondary_textcolor;
             border-radius: 0 3px 3px 0;
             font-size: $font_size / 1.5;
           }
@@ -229,7 +229,7 @@
       }
       p {
         font-size: $font_size * 1.28;
-        color: $colorSilver;
+        color: $secondary_textcolor;
       }
       .yt-button {
         @include greenBtn;
@@ -264,7 +264,7 @@
             vertical-align: middle;
           }
           &:hover {
-            color: $colorBlue;
+            color: $btn_base_color;
           }
         }
       }
@@ -290,10 +290,10 @@
               background-color: $primary_textcolor;
               i {
                 font-size:$font_size /2;
-                color:$colorBlue;
+                color:$btn_base_color;
               }
               &:hover i {
-                color: $colorOrange;
+                color: $btn_base_hoverColor;
               }
             }
             img {
@@ -312,7 +312,7 @@
           p {
             font-size: $font_size / 0.9;
             text-align: center;
-            color: $colorBlue;
+            color: $btn_base_color;
           }
         }
       }

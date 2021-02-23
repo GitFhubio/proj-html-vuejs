@@ -3,7 +3,7 @@
   // margin-top:$margin_unit / 0.15;
   height: 600px;
   width: $full_width;
-  background-image: linear-gradient(90deg, $colorCodGray 45%,rgba(6,6,6,0) 75%),  url($jumbotron1_image);
+  background-image: linear-gradient(90deg, $primary_bgcolor 45%,rgba(6,6,6,0) 75%),  url($jumbotron1_image);
   background-size: cover;
   .container{
     @include widthContainer;
@@ -17,7 +17,7 @@
       padding-top:$padding_unit * 5;
       font-size: $font_size * 1.5;
       font-weight: $font_weight_title / 0.6;
-      color: $colorOrange;
+      color: $btn_base_hoverColor;
     }
     h1 {
       font-size: $font_size / 0.24;
@@ -31,13 +31,13 @@
     .decoration{
       width:85px;
       height:85px;
-      @include icon-divider($colorYellow);
+      @include icon-divider($details_color);
       background-size: cover;
     }
     p {
       font-size: $font_size / 0.72;
       font-weight: $font_weight_title / 0.75;
-      color: $colorSilver;
+      color: $secondary_textcolor;
     }
     ul {
       @include listInline;
@@ -69,10 +69,10 @@
       @include playCircle;
       @include flexCenter;
       i {
-        color:$colorBlue;
+        color:$btn_base_color;
       }
       &:hover i {
-        color: $colorOrange;
+        color: $btn_base_hoverColor;
       }
     }
   }
@@ -81,8 +81,8 @@
 .second-jumbotron {
   height: 660px;
   width: $full_width;
-  background-color: $colorCodGray;
-  background-image: linear-gradient(90deg, $colorCodGray 45%,rgba(6,6,6,0) 75%),  url($jumbotron2_image);
+  background-color: $primary_bgcolor;
+  background-image: linear-gradient(90deg, $primary_bgcolor 45%,rgba(6,6,6,0) 75%),  url($jumbotron2_image);
   background-size: cover;
   background-repeat: no-repeat;
   .container{
@@ -97,7 +97,7 @@
     padding-top:$padding_unit * 5;
     font-size: $font_size * 1.5;
     font-weight: $font_weight_title / 0.6;
-    color: $colorOrange;
+    color: $btn_base_hoverColor;
   }
   h2 {
     font-size: $font_size * 3.22;
@@ -108,13 +108,13 @@
     width:85px;
     height:85px;
     // background-image: url($icon_separator);
-    @include icon-divider($colorYellow);
+    @include icon-divider($details_color);
     background-size:cover;
   }
   p {
     font-size: $font_size / 0.72;
     font-weight: $font_weight_title / 0.75;
-    color: $colorSilver;
+    color: $secondary_textcolor;
   }
   ul {
     @include listInline;
@@ -146,7 +146,7 @@
     text-align: center;}
     height: 730px;
     padding: 0 $padding_unit * 15;
-    background-image: linear-gradient(180deg, rgba(0,2,17,0.16) 0%,$colorCodGray 100%),url($jumbotron3_image);
+    background-image: linear-gradient(180deg, rgba(0,2,17,0.16) 0%,$primary_bgcolor 100%),url($jumbotron3_image);
     background-size: cover;
     background-repeat: no-repeat;
     h1 {
@@ -160,7 +160,7 @@
     .decoration{
       width:85px;
       height:85px;
-      @include icon-divider($colorYellow);
+      @include icon-divider($details_color);
       background-size:cover;
     }
     p {
@@ -194,10 +194,10 @@
         @include playCircle;
         @include flexCenter;
         i {
-          color:$colorBlue;
+          color:$btn_base_color;
         }
         &:hover i {
-          color: $colorOrange;
+          color: $btn_base_hoverColor;
         }
       }
       h1{font-size: $font_size * 3.2;
@@ -208,7 +208,7 @@
       }
       h2{font-size: $font_size * 2.5;
         font-weight: $font_weight_title / 0.6;
-        color:$colorYellow;
+        color:$details_color;
       }
     }
   }

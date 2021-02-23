@@ -41,29 +41,29 @@
 }
 @mixin blueBtn {
   @include Btn;
-  background-color: $colorBlue;
+  background-color: $btn_base_color;
   font-weight: $font_weight_title / 0.6;
   &:hover {
-    background-color: $colorOrange;
+    background-color: $btn_base_hoverColor;
   }
 }
 @mixin trasparentBtn {
   @include Btn;
-  border: 2px solid $colorSilver;
+  border: 2px solid $secondary_textcolor;
   font-weight: $font_weight_title / 0.6;
   &:hover {
     background-color: $primary_textcolor;
     border: 2px solid $primary_textcolor;
-    color: $colorCodGray;
+    color: $primary_bgcolor;
   }
 }
 
 @mixin greenBtn {
   @include Btn;
-  background-color: $colorGreen;
+  background-color: $subscribe_section_color;
   font-weight: $font_weight_title / 0.6;
   &:hover {
-    background-color: rgba($colorGreen,0.7);
+    background-color: rgba($subscribe_section_color,0.7);
   }
 }
 

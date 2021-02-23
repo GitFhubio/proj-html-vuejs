@@ -531,7 +531,7 @@ header .header-right .blue-button:hover {
   width: 0;
   z-index: 1;
   border-style: solid;
-  border-color: #ffffff transparent;
+  border-color: #fff transparent;
   border-width: 0 11px 9px;
   top: -9px;
   left: 18%;

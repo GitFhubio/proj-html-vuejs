@@ -45,7 +45,7 @@ body {
   z-index:3;
   width:$full_width;
   height:$full_height;
-  background-color: $colorCodGray;
+  background-color: $primary_bgcolor;
 
   i {
     @include centered;
@@ -71,7 +71,7 @@ body {
   div{
     @include flexCenter;
     overflow: hidden;
-    box-shadow:2px 2px 10px $colorSilver;
+    box-shadow:2px 2px 10px $secondary_textcolor;
     left:0;
     right:0;
     flex-direction: column;
@@ -93,11 +93,11 @@ body {
   padding:$padding_unit * 0.3 $padding_unit;
   border-radius:7px 7px 0 0 ;
   color:$primary_textcolor;
-  background-color: rgba($colorCodGray,.7);
+  background-color: rgba($primary_bgcolor,.7);
   position:fixed;
   bottom:0;
   right:100px;
   &:hover{
-    background-color: $colorBlue;
+    background-color: $btn_base_color;
   }
 }

@@ -7,7 +7,7 @@
     // z-index: 1;
     height: 100px;
     width: $full_width;
-    background-color: $colorCodGray;
+    background-color: $primary_bgcolor;
     justify-content: space-between;
     align-items: center;
 
@@ -25,7 +25,7 @@
       li{ position:relative;
         .dropdown{
           width:max-content;
-          background-color: $colorCodGray;
+          background-color: $primary_bgcolor;
           opacity:0.9;
           z-index:2;
           position:absolute;
@@ -46,8 +46,8 @@
                margin-left: $margin_unit / 1.5;
                font-size: $font_size / 1.5;
                font-weight: $font_weight_title / 0.6;
-               color: $colorCodGray;
-               background-color: $colorYellow;
+               color: $primary_bgcolor;
+               background-color: $details_color;
 
           }
     }
@@ -58,7 +58,7 @@
         margin: $margin_unit / 0.75;
         a {
           text-decoration: none;
-          color: $colorSilver;
+          color: $secondary_textcolor;
           font-weight: $font_weight_title / 0.6;
           &:hover{
             color: $primary_textcolor;

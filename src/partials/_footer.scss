@@ -1,5 +1,5 @@
 footer{
-  background-color:$colorCodGray;
+  background-color:$primary_bgcolor;
   .container {
     @include widthContainer;
     color:white;
@@ -33,7 +33,7 @@ footer{
           li {
             position:relative;
             padding: $padding_unit / 2;
-            color: $colorOrange;
+            color: $btn_base_hoverColor;
             .dropdown{
               left:$full_width / 2;
               transform: translate(- $full_width / 2,0);
@@ -64,7 +64,7 @@ footer{
             padding-top: $padding_unit * 1.6;
           }
           li:hover {
-            color: $colorOrange;
+            color: $btn_base_hoverColor;
           }
         }
       }
@@ -92,19 +92,19 @@ footer{
   }
   .footer-bottom {
     height: 100px;
-    border-top: 1px solid $colorSilver;
+    border-top: 1px solid $secondary_textcolor;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     ul {
       @include listInline;
-      color: $colorSilver;
+      color: $secondary_textcolor;
       span {
         cursor:pointer;
         color: $primary_textcolor;
         &:hover {
-          color: $colorOrange;
+          color: $btn_base_hoverColor;
         }
       }
       li{position:relative;
