@@ -503,10 +503,10 @@ header .header-right .blue-button:hover {
   justify-content: center;
   position: relative;
   width: 75%;
-  background-color: #ec5a57;
+  background-color: #41c457;
 }
 .main-center-right .youtube .subscribe > div:hover {
-  background-color: #a51b0b;
+  background-color: #267934;
 }
 .main-center-right .youtube .subscribe > div .dropdown:hover .dropdown-content {
   display: flex;
@@ -576,7 +576,7 @@ header .header-right .blue-button:hover {
   font-size: 23.04px;
   color: #bcbcbc;
 }
-.main-center-right .red-button {
+.main-center-right .yt-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
@@ -588,10 +588,10 @@ header .header-right .blue-button:hover {
   text-align: center;
   margin-top: 40.05px;
 }
-.main-center-right .red-button:hover {
+.main-center-right .yt-button:hover {
   background-color: rgba(65, 196, 87, 0.7);
 }
-.main-center-right .red-button i {
+.main-center-right .yt-button i {
   padding-left: 10px;
 }
 .main .main-bottom {
@@ -1212,7 +1212,7 @@ body {
   padding: 6px 20px;
   border-radius: 7px 7px 0 0;
   color: #fff;
-  background-color: #060606;
+  background-color: rgba(6, 6, 6, 0.7);
   position: fixed;
   bottom: 0;
   right: 100px;

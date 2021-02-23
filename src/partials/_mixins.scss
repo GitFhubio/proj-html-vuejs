@@ -58,12 +58,12 @@
   }
 }
 
-@mixin redBtn {
+@mixin greenBtn {
   @include Btn;
   background-color: $colorGreen;
   font-weight: $font_weight_title / 0.6;
   &:hover {
-    background-color: rgba(65,196,87,0.7);
+    background-color: rgba($colorGreen,0.7);
   }
 }
 

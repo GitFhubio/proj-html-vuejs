@@ -155,9 +155,9 @@
             @include flexCenter;
             position:relative;
             width:$full_width * 0.75;
-            background-color: $colorOrange;
+            background-color: $colorGreen;
             &:hover{
-              background-color: #a51b0b;
+           background-color:darken($colorGreen, 20%);
             }
             .dropdown:hover .dropdown-content{
               @include flex;
@@ -231,8 +231,8 @@
         font-size: $font_size * 1.28;
         color: $colorSilver;
       }
-      .red-button {
-        @include redBtn;
+      .yt-button {
+        @include greenBtn;
         width: 320px;
         font-size: $font_size;
         text-align: center;
