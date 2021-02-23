@@ -66,7 +66,7 @@ header .header-right > ul > li a:hover {
 header .header-right > ul > li:first-child a {
   color: #fff;
 }
-header .header-right .blue-button {
+header .header-right .nav-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
@@ -75,7 +75,7 @@ header .header-right .blue-button {
   font-weight: 500;
   font-size: 14.04px;
 }
-header .header-right .blue-button:hover {
+header .header-right .nav-button:hover {
   background-color: #ec5a57;
 }
 
@@ -127,7 +127,7 @@ header .header-right .blue-button:hover {
 .jumbotron-left ul li:nth-child(2) {
   margin-left: 10px;
 }
-.jumbotron-left ul .blue-button {
+.jumbotron-left ul .VisitmyChannel-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
@@ -137,10 +137,10 @@ header .header-right .blue-button:hover {
   padding: 18px 26px;
   font-size: 18px;
 }
-.jumbotron-left ul .blue-button:hover {
+.jumbotron-left ul .VisitmyChannel-button:hover {
   background-color: #ec5a57;
 }
-.jumbotron-left ul .trasparent-button {
+.jumbotron-left ul .BuyAvada-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
@@ -148,7 +148,7 @@ header .header-right .blue-button:hover {
   border: 2px solid #bcbcbc;
   font-weight: 500;
 }
-.jumbotron-left ul .trasparent-button:hover {
+.jumbotron-left ul .BuyAvada-button:hover {
   background-color: #fff;
   border: 2px solid #fff;
   color: #060606;
@@ -227,7 +227,7 @@ header .header-right .blue-button:hover {
 .jumbotron-content ul li {
   font-size: 18px;
 }
-.jumbotron-content ul .blue-button {
+.jumbotron-content ul .form-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
@@ -239,7 +239,7 @@ header .header-right .blue-button:hover {
   margin-top: 40.05px;
   font-size: 18px;
 }
-.jumbotron-content ul .blue-button:hover {
+.jumbotron-content ul .form-button:hover {
   background-color: #ec5a57;
 }
 .jumbotron-content ul input {
@@ -280,7 +280,7 @@ header .header-right .blue-button:hover {
   font-weight: 400;
   color: #fff;
 }
-.third-jumbotron .blue-button {
+.third-jumbotron .BuyAvada-button {
   padding: 15px 30px;
   border-radius: 40px;
   color: #fff;
@@ -291,7 +291,7 @@ header .header-right .blue-button:hover {
   margin-top: 30px;
   font-size: 18px;
 }
-.third-jumbotron .blue-button:hover {
+.third-jumbotron .BuyAvada-button:hover {
   background-color: #ec5a57;
 }
 
