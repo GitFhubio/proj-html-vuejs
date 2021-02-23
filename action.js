@@ -233,18 +233,18 @@ methods:{
 
     // funzione per avere lo scroll solo quando elemento è nella viewport
 
-    const inViewport = (entries, observer) => {
-      entries.forEach(entry => {
-        entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-      });
-    };
-    const Obs = new IntersectionObserver(inViewport);
-    const obsOptions = {};
-    elements_inViewport = document.querySelectorAll('[data-inviewport]');
-    elements_inViewport.forEach(element => {
-      // element.style.animationDelay = "0.5s";
-      Obs.observe(element, obsOptions);
-    });
+// funzione intersection observer per animation on scroll (il metodo funziona ma ho preferito usare aos di animate css per allegerire codice)
+    // const inViewport = (entries, observer) => {
+    //   entries.forEach(entry => {
+    //     entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    //   });
+    // };
+    // const Obs = new IntersectionObserver(inViewport);
+    // const obsOptions = {};
+    // elements_inViewport = document.querySelectorAll('[data-inviewport]');
+    // elements_inViewport.forEach(element => {
+    //   Obs.observe(element, obsOptions);
+    // });
 
   }
 

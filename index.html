@@ -95,10 +95,10 @@
         <!-- fine main top -->
         <!-- inizio main-center -->
         <div class="main-center">
-          <div :data-inviewport=" delay==false ? 'slide-right' : 'slide-right-delay'" class="main-center-left">
+          <div :data-aos-delay="delay==false ? '0' : '450'" data-aos="fade-right" class="main-center-left">
             <div class="main-center-left-play"><i class="fas fa-play"></i></div>
           </div>
-          <div :data-inviewport=" delay==false ? 'slide-left' : 'slide-left-delay'" class="main-center-right">
+          <div :data-aos-delay="delay==false ? '0' : '450'" data-aos="fade-left" class="main-center-right">
             <p>Tune up your workouts</p>
             <h2>The best health & fitness advice online</h2>
             <div class="youtube">
@@ -134,7 +134,7 @@
               <p>Featured playlists</p>
               <p>View all videos <i class="fas fa-angle-right"></i></p>
             </div>
-            <div :data-aos-delay="delay==false ? '0' : '300'" data-aos-mirror="true" data-aos="fade-up" class="videos">
+            <div :data-aos-delay="delay==false ? '0' : '450'" data-aos="fade-up" class="videos">
               <div class="video" v-for="video in videosData">
                 <div class="photo">
                   <div class="play"><i class="fas fa-play"></i></div>
@@ -150,7 +150,7 @@
       </div>
       <div class="second-jumbotron">
         <div class="container">
-          <div :data-aos-delay="delay==false ? '0' : '300'" data-aos="fade-right" class="jumbotron-content">
+          <div :data-aos-delay="delay==false ? '0' : '450'" data-aos="fade-right" class="jumbotron-content">
             <h3>Join our mailing list today</h3>
             <h2>Insider offers & flash sales in your inbox every week.</h2>
             <!-- <img src="img/wave.svg" alt="wave"> -->
@@ -181,7 +181,7 @@
             <p>Latest articles</p>
             <p>Read all articles <i class="fas fa-angle-right"></i></p>
           </div>
-          <div :data-inviewport=" delay==false ? 'slide-right' : 'slide-right-delay'" class="articles">
+          <div :data-aos-delay="delay==false ? '0' : '450'" data-aos="fade-right" class="articles">
             <div class="article" v-for="article in articles">
               <div class="image"  :style="{ 'background-image' : 'url(\'' + article.photo + '\')' }">
                 <div class="layover">
@@ -212,7 +212,7 @@
         </div>
       </div>
       <div class="offers">
-        <div :data-aos-delay="delay==false ? '0' : '300'" data-aos="fade-up" class="container">
+        <div :data-aos-delay="delay==false ? '0' : '450'" data-aos="fade-up" class="container">
           <div class="offer" v-for="offer in offers">
             <img :src="offer.logo" alt="logo offerta">
             <!-- <img src="img/wave.svg" alt="wave"> -->
@@ -224,7 +224,7 @@
         </div>
       </div>
       <div class="final-jumbotron">
-        <div :data-inviewport=" delay==false ? 'slide-top' : 'slide-top-delay'">
+        <div :data-aos-delay="delay==false ? '0' : '450'" data-aos="fade-up">
           <div class="play"><i class="fas fa-play"></i></div>
           <h1>Crossfit workout of the day</h1>
           <h2>November 15th, 2019</h2>
